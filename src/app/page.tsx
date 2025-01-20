@@ -1,14 +1,32 @@
+"use client";
 import Nav from "../components/Nav";
 import Post from "@/components/Post";
 import Typewriter from "@/components/Typewriter";
+
+import { useEffect } from "react";
+
+import ScrollReveal from "scrollreveal";
 import { FaInstagram, FaLinkedin, FaRegEnvelope } from "react-icons/fa";
 
+const sr = ScrollReveal({
+	duration: 3000,
+});
+
 const page = () => {
+	useEffect(() => {
+		sr.reveal(`#slogan`, { origin: "top", delay: 100 });
+		sr.reveal(`#posts`, { delay: 800 });
+		sr.reveal(`#social`, { delay: 1000 });
+	}, []);
+
 	return (
 		<div>
 			<Nav />
 
-			<ul className="hidden md:flex fixed left-8 top-1/2 flex-col gap-4">
+			<ul
+				className="hidden md:flex fixed left-8 top-1/2 flex-col gap-4"
+				id="social"
+			>
 				<li>
 					<FaInstagram className="text-2xl transition-all duration-300 hover:-translate-x-2" />
 				</li>
@@ -20,14 +38,14 @@ const page = () => {
 				</li>
 			</ul>
 
-			<div className="container mx-auto px-4 py-8">
+			<div className="container mx-auto px-4 py-8" id="slogan">
 				<Typewriter
 					text="braindump that dumbs a generative world"
 					delay={100}
 				/>
 			</div>
 
-			<div className="container mx-auto px-4 py-8">
+			<div className="container mx-auto px-4 py-8" id="posts">
 				<div className="columns-1 md:columns-2 gap-6 space-y-6">
 					<Post
 						title="DANGER OF SMOKING IN BED"
