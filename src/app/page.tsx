@@ -2,6 +2,7 @@
 import Nav from "../components/Nav";
 import Post from "@/components/Post";
 import Typewriter from "@/components/Typewriter";
+import Footer from "@/components/Footer";
 
 import { useEffect } from "react";
 
@@ -15,8 +16,8 @@ const sr = ScrollReveal({
 const page = () => {
 	useEffect(() => {
 		sr.reveal(`#slogan`, { origin: "top", delay: 100 });
-		sr.reveal(`#posts`, { delay: 800 });
-		sr.reveal(`#social`, { delay: 1000 });
+		sr.reveal(`#posts`, { delay: 500 });
+		sr.reveal(`#social`, { delay: 800 });
 	}, []);
 
 	return (
@@ -28,13 +29,19 @@ const page = () => {
 				id="social"
 			>
 				<li>
-					<FaInstagram className="text-2xl transition-all duration-300 hover:-translate-x-2" />
+					<a href="https://www.instagram.com/kelramel_/">
+						<FaInstagram className="text-2xl transition-all duration-300 hover:-translate-x-2" />
+					</a>
 				</li>
 				<li>
-					<FaLinkedin className="text-2xl transition-all duration-300 hover:-translate-x-2" />
+					<a href="#">
+						<FaLinkedin className="text-2xl transition-all duration-300 hover:-translate-x-2" />
+					</a>
 				</li>
 				<li>
-					<FaRegEnvelope className="text-2xl transition-all duration-300 hover:-translate-x-2" />
+					<a href="#">
+						<FaRegEnvelope className="text-2xl transition-all duration-300 hover:-translate-x-2" />
+					</a>
 				</li>
 			</ul>
 
@@ -69,6 +76,8 @@ const page = () => {
 					/>
 				</div>
 			</div>
+
+			<Footer />
 		</div>
 	);
 };
