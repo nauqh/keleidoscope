@@ -19,17 +19,17 @@ const page = () => {
 					<div className="space-y-4">
 						<p>
 							Erin Boyle is the writer and photographer behind
-							Reading My Tea Leaves. She's a minimalist with a
+							Reading My Tea Leaves. Shes a minimalist with a
 							penchant for a good story and a soft spot for an
 							aged patina. Her approach to living simply is one
-							that acknowledges that life isn't always simple, but
+							that acknowledges that life isnt always simple, but
 							the curtains can be.
 						</p>
 						<p>
 							Erin grew up in a house full of sisters on the
 							Connecticut shoreline. She studied history as an
 							undergrad at Sarah Lawrence College and has a
-							master's in public humanities from Brown University.
+							masters in public humanities from Brown University.
 							Past work in historic and cultural preservation
 							informs her desire to cherish what is beautiful,
 							useful, and meaningful. Time spent living in an
@@ -37,13 +37,13 @@ const page = () => {
 							taught her to reevaluate everything else.
 						</p>
 						<p>
-							Erin's first book, Simple Matters, came out in
-							January, 2016. It's a nod to the growing consensus
+							Erins first book, Simple Matters, came out in
+							January, 2016. Its a nod to the growing consensus
 							that living simply and purposefully is more
 							sustainable not only for the environment, but for
 							our own happiness and well-being, too. Erin embraces
 							the notion that "living small" is beneficial and
-							accessible to us all—whether we're renting a tiny
+							accessible to us all—whether were renting a tiny
 							apartment or purchasing a three-story house.
 						</p>
 					</div>
