@@ -17,7 +17,8 @@ interface PostProps {
 
 const Post = ({ title, img, posted_at }: PostProps) => {
 	return (
-		<Link href={`/posts/${title.toLowerCase().replace(/\s+/g, "-")}`}>
+		// <Link href={`/posts/${title.toLowerCase().replace(/\s+/g, "-")}`}>
+		<Link href="/">
 			<Card className="border-none h-fit transition-all duration-300 hover:-translate-y-2">
 				<CardHeader>
 					<CardTitle className="my-4 text-xl text-center font-normal">
