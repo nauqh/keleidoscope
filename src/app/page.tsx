@@ -36,42 +36,33 @@ const page = () => {
 				</ul>
 
 				<div className="container mx-auto px-4 py-8" id="slogan">
-					<Typewriter
-						text="dumping thoughts on dumb ears"
-						delay={100}
-					/>
+					<Typewriter text="a voice in the void" delay={100} />
 				</div>
 
 				<div className="container mx-auto px-4 py-8" id="posts">
-					<div className="columns-1 md:columns-2 gap-6">
-						<div className="mb-6 break-inside-avoid">
+					<div className="columns-1 md:columns-2 gap-6 space-y-6">
+						<Fade cascade={true} triggerOnce={true}>
 							<Post
 								title="DANGER OF SMOKING IN BED"
 								img="https://s3-eu-west-1.amazonaws.com/asthebirdfliesblog.com/content/images/posts/pexels-lalesh-aldarwish-147634_x960.jpg?v=1"
 								posted_at="2023-12-15T12:00:00Z"
 							/>
-						</div>
-						<div className="mb-6 break-inside-avoid">
 							<Post
 								title="A SUNNY PLACE FOR SHADY PEOPLE"
 								img="https://s3-eu-west-1.amazonaws.com/asthebirdfliesblog.com/content/images/posts/beige-minimal-aesthetic-photo-collage_x960.jpg?v=1"
 								posted_at="2023-12-14T15:30:00Z"
 							/>
-						</div>
-						<div className="mb-6 break-inside-avoid">
 							<Post
 								title="A SUNNY PLACE FOR SHADY PEOPLE"
 								img="https://s3-eu-west-1.amazonaws.com/asthebirdfliesblog.com/content/images/posts/beige-minimal-aesthetic-photo-collage_x960.jpg?v=1"
 								posted_at="2023-12-14T15:30:00Z"
 							/>
-						</div>
-						<div className="mb-6 break-inside-avoid">
 							<Post
 								title="DANGER OF SMOKING IN BED"
 								img="https://s3-eu-west-1.amazonaws.com/asthebirdfliesblog.com/content/images/posts/pexels-lalesh-aldarwish-147634_x960.jpg?v=1"
 								posted_at="2023-12-15T12:00:00Z"
 							/>
-						</div>
+						</Fade>
 					</div>
 				</div>
 			</Fade>

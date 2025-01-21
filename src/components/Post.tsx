@@ -17,8 +17,8 @@ interface PostProps {
 
 const Post = ({ title, img, posted_at }: PostProps) => {
 	return (
-		<Link href={`/posts/${title.toLowerCase().replace(/\s+/g, "-")}`}>
-			<Card className="border-none h-fit transition-all duration-300 hover:-translate-y-2">
+		<Card className="border-none h-fit transition-all duration-300 hover:-translate-y-2">
+			<Link href={`/posts/${title.toLowerCase().replace(/\s+/g, "-")}`}>
 				<CardHeader>
 					<CardTitle className="my-4 text-xl text-center font-light">
 						{title}
@@ -47,8 +47,8 @@ const Post = ({ title, img, posted_at }: PostProps) => {
 					<Badge variant="secondary">Badge</Badge>
 					<Badge variant="secondary">Badge</Badge>
 				</CardFooter>
-			</Card>
-		</Link>
+			</Link>
+		</Card>
 	);
 };
 
