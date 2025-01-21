@@ -28,7 +28,10 @@ const Nav = () => {
 					{/* Desktop menu */}
 					<ul className="hidden md:flex space-x-8">
 						{["Home", "About", "Contact"].map((text) => (
-							<li key={text} className="hover:underline">
+							<li
+								key={text}
+								className="hover:bg-gray-100 px-3 py-2 rounded-md"
+							>
 								<Link href={`/${text.toLowerCase()}`}>
 									{text}
 								</Link>
@@ -47,7 +50,10 @@ const Nav = () => {
 				>
 					<ul className="pb-4 text-center">
 						{["Home", "About", "Contact"].map((text) => (
-							<li key={text} className="hover:underline py-2">
+							<li
+								key={text}
+								className="hover:bg-gray-100 px-3 py-2 rounded-md"
+							>
 								<Link href={`/${text.toLowerCase()}`}>
 									{text}
 								</Link>
