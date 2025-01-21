@@ -38,8 +38,14 @@ const Nav = () => {
 				</div>
 
 				{/* Mobile menu */}
-				{isMenuOpen && (
-					<ul className="md:hidden pb-4">
+				<div
+					className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+						isMenuOpen
+							? "max-h-48 opacity-100"
+							: "max-h-0 opacity-0"
+					}`}
+				>
+					<ul className="pb-4 text-center">
 						{["Home", "About", "Contact"].map((text) => (
 							<li key={text} className="hover:underline py-2">
 								<Link href={`/${text.toLowerCase()}`}>
@@ -48,7 +54,7 @@ const Nav = () => {
 							</li>
 						))}
 					</ul>
-				)}
+				</div>
 			</div>
 		</nav>
 	);
