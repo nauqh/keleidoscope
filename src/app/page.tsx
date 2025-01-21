@@ -35,11 +35,11 @@ const page = () => {
 					</li>
 				</ul>
 
-				<div className="container mx-auto px-4 py-8" id="slogan">
+				<div className="container mx-auto px-4 py-5" id="slogan">
 					<Typewriter text="a voice in the void" delay={100} />
 				</div>
 
-				<div className="container mx-auto px-4 py-8" id="posts">
+				<div className="container mx-auto px-4 py-5" id="posts">
 					<div className="columns-1 md:columns-2 gap-6 space-y-6">
 						<Fade cascade={true} triggerOnce={true}>
 							<Post
