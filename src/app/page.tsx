@@ -11,9 +11,10 @@ const page = () => {
 	return (
 		<div>
 			<Nav />
+
 			<Fade cascade={true}>
 				<ul
-					className="hidden md:flex fixed left-8 top-1/2 flex-col gap-2"
+					className="hidden md:flex fixed left-8 top-1/2 flex-col gap-2 z-10"
 					id="social"
 				>
 					<li>
