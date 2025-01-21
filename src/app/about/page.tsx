@@ -42,7 +42,7 @@ const page = () => {
 							that living simply and purposefully is more
 							sustainable not only for the environment, but for
 							our own happiness and well-being, too. Erin embraces
-							the notion that "living small" is beneficial and
+							the notion that living small is beneficial and
 							accessible to us all—whether were renting a tiny
 							apartment or purchasing a three-story house.
 						</p>
