@@ -36,7 +36,15 @@ const page = () => {
 				</ul>
 
 				<div className="container mx-auto px-4 py-5" id="slogan">
-					<Typewriter text="a voice in the void" delay={100} />
+					<div className="hidden md:block">
+						<Typewriter
+							text="dumping thoughts on dumb ears"
+							delay={100}
+						/>
+					</div>
+					<div className="md:hidden">
+						<Typewriter text="a voice in the void" delay={100} />
+					</div>
 				</div>
 
 				<div className="container mx-auto px-4 py-5" id="posts">
