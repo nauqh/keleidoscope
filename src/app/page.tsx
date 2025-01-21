@@ -25,22 +25,22 @@ const page = () => {
 			<Nav />
 
 			<ul
-				className="hidden md:flex fixed left-8 top-1/2 flex-col gap-4"
+				className="hidden md:flex fixed left-8 top-1/2 flex-col gap-2"
 				id="social"
 			>
 				<li>
 					<a href="https://www.instagram.com/kelramel_/">
-						<FaInstagram className="text-2xl transition-all duration-300 hover:-translate-x-2" />
+						<FaInstagram className="text-2xl transition-all duration-300 hover:scale-110" />
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<FaLinkedin className="text-2xl transition-all duration-300 hover:-translate-x-2" />
+						<FaLinkedin className="text-2xl transition-all duration-300 hover:scale-110" />
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<FaRegEnvelope className="text-2xl transition-all duration-300 hover:-translate-x-2" />
+						<FaRegEnvelope className="text-2xl transition-all duration-300 hover:scale-110" />
 					</a>
 				</li>
 			</ul>
