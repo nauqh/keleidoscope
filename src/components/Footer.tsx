@@ -8,7 +8,7 @@ const Footer = () => {
 		>
 			<div className="my-4 flex justify-between">
 				<div className="mx-auto font-light">
-					Design & Built by{" "}
+					Made with 💗 by{" "}
 					<span className="transition-transform duration-300 hover:scale-110 inline-block font-bold">
 						<a href="https://nauqh.github.io">Nauqh</a>
 					</span>
