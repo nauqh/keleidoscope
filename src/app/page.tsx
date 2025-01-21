@@ -1,25 +1,11 @@
-"use client";
 import Nav from "../components/Nav";
 import Post from "@/components/Post";
 import Typewriter from "@/components/Typewriter";
 import Footer from "@/components/Footer";
 
-import { useEffect } from "react";
-
-import ScrollReveal from "scrollreveal";
 import { FaInstagram, FaLinkedin, FaRegEnvelope } from "react-icons/fa";
 
-const sr = ScrollReveal({
-	duration: 3000,
-});
-
-const Page = () => {
-	useEffect(() => {
-		sr.reveal(`#slogan`, { origin: "top", delay: 100 });
-		sr.reveal(`#posts`, { delay: 500 });
-		sr.reveal(`#social`, { delay: 800 });
-	}, []);
-
+const page = () => {
 	return (
 		<div>
 			<Nav />
@@ -82,4 +68,4 @@ const Page = () => {
 	);
 };
 
-export default Page;
+export default page;
