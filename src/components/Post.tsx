@@ -20,7 +20,7 @@ const Post = ({ title, img, posted_at }: PostProps) => {
 		<Link href={`/posts/${title.toLowerCase().replace(/\s+/g, "-")}`}>
 			<Card className="border-none h-fit transition-all duration-300 hover:-translate-y-2">
 				<CardHeader>
-					<CardTitle className="my-4 text-xl text-center font-normal">
+					<CardTitle className="my-4 text-xl text-center font-light">
 						{title}
 					</CardTitle>
 					<CardDescription className="text-center">
