@@ -17,10 +17,10 @@ interface PostProps {
 
 const Post = ({ title, img, posted_at }: PostProps) => {
 	return (
-		<Card className="border-none h-fit transition-all duration-300 hover:-translate-y-2">
+		<Card className="border-none h-fit transition-all duration-300 hover:-translate-y-2 group">
 			<Link href={`/posts/${title.toLowerCase().replace(/\s+/g, "-")}`}>
 				<CardHeader>
-					<CardTitle className="my-4 text-xl text-center font-light">
+					<CardTitle className="my-4 text-xl text-center font-light group-hover:text-[hsl(var(--secondary-color))]">
 						{title}
 					</CardTitle>
 					<CardDescription className="text-center">
