@@ -17,8 +17,7 @@ interface PostProps {
 
 const Post = ({ title, img, posted_at }: PostProps) => {
 	return (
-		// <Link href={`/posts/${title.toLowerCase().replace(/\s+/g, "-")}`}>
-		<Link href="/">
+		<Link href={`/posts/${title.toLowerCase().replace(/\s+/g, "-")}`}>
 			<Card className="border-none h-fit transition-all duration-300 hover:-translate-y-2">
 				<CardHeader>
 					<CardTitle className="my-4 text-xl text-center font-normal">
@@ -37,11 +36,11 @@ const Post = ({ title, img, posted_at }: PostProps) => {
 				<CardContent>
 					<img src={img} className="w-auto h-auto rounded" />
 					<p className="text-justify mt-4 font-thin">
-						It's only when my jaw starts to ache and I can no longer
-						ignore the thick ridge of his erection against my
+						It&apos;s only when my jaw starts to ache and I can no
+						longer ignore the thick ridge of his erection against my
 						stomach that I stop kissing Charlie and look down
-						between us. My hands rush to the belt he's wearing but I
-						get nowhere before he's covering my fingers
+						between us. My hands rush to the belt he&apos;s wearing
+						but I get nowhere before he&apos;s covering my fingers
 					</p>
 				</CardContent>
 				<CardFooter className="gap-2">
