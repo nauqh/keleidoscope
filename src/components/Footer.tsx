@@ -12,7 +12,7 @@ const Footer = () => {
 				<div className="mx-auto font-light">
 					Made with 💗 by{" "}
 					<span className="transition-transform duration-300 hover:scale-110 inline-block font-bold">
-						<Link href="https://nauqh.github.io">Nauqh</Link>
+						<Link href="https://nauqh.dev">Nauqh</Link>
 					</span>
 				</div>
 			</div>
