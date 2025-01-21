@@ -13,7 +13,7 @@ const sr = ScrollReveal({
 	duration: 3000,
 });
 
-const page = () => {
+const Page = () => {
 	useEffect(() => {
 		sr.reveal(`#slogan`, { origin: "top", delay: 100 });
 		sr.reveal(`#posts`, { delay: 500 });
@@ -82,4 +82,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default Page;
