@@ -9,7 +9,7 @@ const Nav = () => {
 						className="text-3xl font-semibold transition-transform duration-300 hover:scale-110"
 						style={{ fontFamily: "'Reenie Beanie', cursive" }}
 					>
-						<a href="#">Keleidoscope</a>
+						<Link href="/">Keleidoscope</Link>
 					</h1>
 					<ul className="flex space-x-8">
 						{["Home", "About", "Contact"].map((text) => (

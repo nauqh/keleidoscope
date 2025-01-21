@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
 	return (
 		<footer
@@ -10,7 +12,7 @@ const Footer = () => {
 				<div className="mx-auto font-light">
 					Made with 💗 by{" "}
 					<span className="transition-transform duration-300 hover:scale-110 inline-block font-bold">
-						<a href="https://nauqh.github.io">Nauqh</a>
+						<Link href="https://nauqh.github.io">Nauqh</Link>
 					</span>
 				</div>
 			</div>

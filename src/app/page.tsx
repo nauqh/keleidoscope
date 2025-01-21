@@ -2,6 +2,7 @@ import Nav from "../components/Nav";
 import Post from "@/components/Post";
 import Typewriter from "@/components/Typewriter";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 import { Fade } from "react-awesome-reveal";
 
@@ -18,19 +19,19 @@ const page = () => {
 					id="social"
 				>
 					<li>
-						<a href="https://www.instagram.com/kelramel_/">
+						<Link href="https://www.instagram.com/kelramel_/">
 							<FaInstagram className="text-2xl transition-all duration-300 hover:scale-110" />
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href="#">
+						<Link href="#">
 							<FaLinkedin className="text-2xl transition-all duration-300 hover:scale-110" />
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href="#">
+						<Link href="#">
 							<FaRegEnvelope className="text-2xl transition-all duration-300 hover:scale-110" />
-						</a>
+						</Link>
 					</li>
 				</ul>
 
