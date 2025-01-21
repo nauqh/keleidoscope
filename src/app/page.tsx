@@ -1,6 +1,7 @@
 import Post from "@/components/Post";
 import Typewriter from "@/components/Typewriter";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 import { Fade } from "react-awesome-reveal";
 
@@ -70,6 +71,7 @@ const page = () => {
 					</div>
 				</div>
 			</Fade>
+			<Footer />
 		</div>
 	);
 };
