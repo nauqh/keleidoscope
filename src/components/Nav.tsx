@@ -1,20 +1,19 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
 
 const Nav = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	return (
-		<nav className="sticky top-0 bg-white z-50 shadow-sm">
+		<nav className="sticky top-0 bg-white z-50 shadow-md">
 			<div className="container mx-auto p-1">
-				<div className="my-4 px-2 flex items-center justify-between">
-					<h1
-						className="text-3xl font-semibold transition-transform duration-300 hover:scale-110"
-						style={{ fontFamily: "'Reenie Beanie', cursive" }}
-					>
-						<Link href="/">Keleidoscope</Link>
+				<div className="my-2 px-2 flex items-center justify-between">
+					<h1 className="hidden md:block text-xl transition-transform duration-300 hover:scale-110">
+						<Link className="font-semibold" href="/">
+							Keleidoscope
+						</Link>
 					</h1>
 
 					{/* Hamburger button */}
@@ -22,7 +21,11 @@ const Nav = () => {
 						className="md:hidden p-2"
 						onClick={() => setIsMenuOpen(!isMenuOpen)}
 					>
-						<FaBars className="w-6 h-6" />
+						{isMenuOpen ? (
+							<FaTimes className="w-6 h-6" />
+						) : (
+							<FaBars className="w-6 h-6" />
+						)}
 					</button>
 
 					{/* Desktop menu */}
@@ -30,7 +33,7 @@ const Nav = () => {
 						{["Home", "About", "Contact"].map((text) => (
 							<li
 								key={text}
-								className="hover:bg-gray-100 px-3 py-2 rounded-md"
+								className="duration-300 hover:scale-110 hover:text-[hsl(var(--secondary-color))] px-3 py-2 rounded-md"
 							>
 								<Link href={`/${text.toLowerCase()}`}>
 									{text}
@@ -38,6 +41,17 @@ const Nav = () => {
 							</li>
 						))}
 					</ul>
+
+					<div className="relative mx-4">
+						<input
+							type="text"
+							placeholder="Search..."
+							className="w-[200px] px-4 py-2 pr-10 rounded-lg border border-gray-300 focus:outline-none focus:border-[hsl(var(--secondary-color))]"
+						/>
+						<button className="absolute right-3 top-1/2 -translate-y-1/2">
+							<FaSearch className="w-3 h-3 text-gray-400" />
+						</button>
+					</div>
 				</div>
 
 				{/* Mobile menu */}
@@ -52,7 +66,7 @@ const Nav = () => {
 						{["Home", "About", "Contact"].map((text) => (
 							<li
 								key={text}
-								className="hover:bg-gray-100 px-3 py-2 rounded-md"
+								className="hover:bg-gray-100 hover:text-[hsl(var(--secondary-color))] px-3 py-2 rounded-md"
 							>
 								<Link href={`/${text.toLowerCase()}`}>
 									{text}
