@@ -37,7 +37,7 @@ const page = () => {
 
 				<div className="container mx-auto px-4 py-8" id="slogan">
 					<Typewriter
-						text="braindump that dumbs a generative world"
+						text="dumping thoughts on dumb ears"
 						delay={100}
 					/>
 				</div>
