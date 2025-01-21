@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { FaBars } from "react-icons/fa";
 
 const Nav = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,9 +22,7 @@ const Nav = () => {
 						className="md:hidden p-2"
 						onClick={() => setIsMenuOpen(!isMenuOpen)}
 					>
-						<div className="w-6 h-0.5 bg-black mb-1"></div>
-						<div className="w-6 h-0.5 bg-black mb-1"></div>
-						<div className="w-6 h-0.5 bg-black"></div>
+						<FaBars className="w-6 h-6" />
 					</button>
 
 					{/* Desktop menu */}
