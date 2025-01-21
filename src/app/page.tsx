@@ -1,7 +1,5 @@
-import Nav from "../components/Nav";
 import Post from "@/components/Post";
 import Typewriter from "@/components/Typewriter";
-import Footer from "@/components/Footer";
 import Link from "next/link";
 
 import { Fade } from "react-awesome-reveal";
@@ -11,8 +9,6 @@ import { FaInstagram, FaLinkedin, FaRegEnvelope } from "react-icons/fa";
 const page = () => {
 	return (
 		<div>
-			<Nav />
-
 			<Fade cascade={true}>
 				<ul
 					className="hidden md:flex fixed left-8 top-1/2 flex-col gap-2 z-10"
@@ -74,7 +70,6 @@ const page = () => {
 					</div>
 				</div>
 			</Fade>
-			<Footer />
 		</div>
 	);
 };
