@@ -11,7 +11,7 @@ const page = () => {
 				<div className="flex-col md:flex-row flex justify-between items-center gap-4">
 					<Image
 						src="/self.jpg"
-						alt="Author's photo"
+						alt="Authors photo"
 						width={300}
 						height={300}
 						className="rounded-md my-4 h-auto"
