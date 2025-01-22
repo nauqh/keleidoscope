@@ -56,7 +56,7 @@ const Page = () => {
 						href="https://unsplash.com"
 						className="hover:text-[hsl(var(--secondary-color))]"
 					>
-						Unsplash
+						Beyond the Void
 					</a>
 				</p>
 				<h2 className="text-lg text-center leading-relaxed my-10">
