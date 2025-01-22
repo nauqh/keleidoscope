@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "./page.module.css";
 import { Fade } from "react-awesome-reveal";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Page = () => {
 	const pathname = usePathname();
@@ -33,12 +34,20 @@ const Page = () => {
 					</span>
 				</div>
 			</div>
+
 			<div
 				className="container mx-auto px-4 py-5"
 				style={{
 					marginBottom: "10rem",
 				}}
 			>
+				<Image
+					src="/unspoiled.jpg"
+					alt="Unspoiled"
+					width={1920}
+					height={1080}
+					className="rounded-md h-auto w-auto"
+				></Image>
 				<h2 className="text-lg text-center leading-relaxed my-10">
 					We all had been wanting plums to have a strawberry
 					aftertaste.

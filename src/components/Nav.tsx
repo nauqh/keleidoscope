@@ -30,7 +30,7 @@ const Nav = () => {
 
 					{/* Desktop menu */}
 					<ul className="hidden md:flex space-x-8">
-						{["Home", "About", "Contact"].map((text) => (
+						{["Home", "About"].map((text) => (
 							<li
 								key={text}
 								className="duration-300 hover:scale-110 hover:text-[hsl(var(--secondary-color))] px-3 py-2 rounded-md"
@@ -70,7 +70,7 @@ const Nav = () => {
 					}`}
 				>
 					<ul className="pb-4 absolute left-0 bg-[#faf6f1] shadow-md rounded-b-lg w-48">
-						{["Home", "About", "Contact"].map((text) => (
+						{["Home", "About"].map((text) => (
 							<li
 								key={text}
 								className="hover:bg-[#f5efe7] hover:text-[hsl(var(--secondary-color))] px-3 py-2 rounded-md"

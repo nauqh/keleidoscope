@@ -13,12 +13,18 @@ interface PostProps {
 	title: string;
 	img: string;
 	posted_at: string;
+	description?: string;
+	tags?: Array<string>;
 }
 
-const Post = ({ title, img, posted_at }: PostProps) => {
+const Post = ({ title, img, posted_at, description, tags }: PostProps) => {
 	return (
 		<Card className="border-none h-fit transition-all duration-300 hover:-translate-y-2 group">
-			<Link href={`/posts/${title.toLowerCase().replace(/\s+/g, "-")}`}>
+			<Link
+				href={`/posts/${title.toLowerCase().replace(/\s+/g, "-")}${
+					tags ? `?tags=${tags.join(",")}` : ""
+				}`}
+			>
 				<CardHeader>
 					<CardTitle className="my-4 text-xl text-center font-light group-hover:text-[hsl(var(--secondary-color))]">
 						{title}
@@ -36,16 +42,16 @@ const Post = ({ title, img, posted_at }: PostProps) => {
 				<CardContent>
 					<img src={img} className="w-auto h-auto rounded" />
 					<p className="text-justify mt-4 font-thin">
-						It&apos;s only when my jaw starts to ache and I can no
-						longer ignore the thick ridge of his erection against my
-						stomach that I stop kissing Charlie and look down
-						between us. My hands rush to the belt he&apos;s wearing
-						but I get nowhere before he&apos;s covering my fingers
+						{description ||
+							"It's only when my jaw starts to ache and I can no longer ignore the thick ridge of his erection against my stomach that I stop kissing Charlie and look down between us. My hands rush to the belt he's wearing but I get nowhere before he's covering my fingers"}
 					</p>
 				</CardContent>
 				<CardFooter className="gap-2">
-					<Badge variant="secondary">Badge</Badge>
-					<Badge variant="secondary">Badge</Badge>
+					{tags?.map((tag) => (
+						<Badge key={tag} variant="secondary">
+							{tag}
+						</Badge>
+					))}
 				</CardFooter>
 			</Link>
 		</Card>
