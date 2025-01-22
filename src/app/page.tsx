@@ -58,7 +58,7 @@ const page = () => {
 								posted_at="2023-12-14T15:30:00Z"
 							/>
 							<Post
-								title="A SUNNY PLACE FOR SHADY PEOPLE"
+								title="UNSPOILED"
 								img="https://s3-eu-west-1.amazonaws.com/asthebirdfliesblog.com/content/images/posts/beige-minimal-aesthetic-photo-collage_x960.jpg?v=1"
 								posted_at="2023-12-14T15:30:00Z"
 							/>
