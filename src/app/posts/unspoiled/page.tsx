@@ -1,38 +1,37 @@
 "use client";
 import React from "react";
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
 import styles from "./page.module.css";
 import { Fade } from "react-awesome-reveal";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import Image from "next/image";
 
 const Page = () => {
 	const pathname = usePathname();
+	const searchParams = useSearchParams();
 	return (
 		<Fade cascade={true}>
 			<div className="container mx-auto px-4 py-5">
 				<h2 className="text-sm font-semibold text-[hsl(var(--secondary-color))]">
-					DECLUTER
+					{searchParams
+						.get("tags")
+						?.toUpperCase()
+						.split(",")
+						.join(" ")}
 				</h2>
 				<h1 className="text-4xl my-2 capitalize">
 					{pathname.split("/").pop()}
 				</h1>
-				<div className="flex items-center gap-2">
-					<Avatar>
-						<AvatarImage src="/self.jpg" alt="@shadcn" />
-					</Avatar>
-					<span>
-						by{" "}
-						<Link
-							href="/"
-							className="hover:text-[hsl(var(--secondary-color))]"
-						>
-							{" "}
-							Keleidoscope
-						</Link>
-					</span>
-				</div>
+				<span className="tracking-wider text-sm">
+					WRITTEN by{" "}
+					<Link
+						href="/"
+						className="hover:text-[hsl(var(--secondary-color))] uppercase"
+					>
+						{" "}
+						Keleidoscope
+					</Link>
+				</span>
 			</div>
 
 			<div
