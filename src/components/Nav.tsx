@@ -1,7 +1,14 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
+import {
+	FaBars,
+	FaTimes,
+	FaSearch,
+	FaInstagram,
+	FaLinkedin,
+	FaRegEnvelope,
+} from "react-icons/fa";
 
 const Nav = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -87,6 +94,18 @@ const Nav = () => {
 								</Link>
 							</li>
 						))}
+						{/* Social links for mobile */}
+						<div className="flex px-3 gap-4 mt-4">
+							<Link href="https://www.instagram.com/kelramel_/">
+								<FaInstagram className="text-xl" />
+							</Link>
+							<Link href="#">
+								<FaLinkedin className="text-xl" />
+							</Link>
+							<Link href="mailto:hodominhquan.self@gmail.com">
+								<FaRegEnvelope className="text-xl" />
+							</Link>
+						</div>
 					</ul>
 				</div>
 			</div>
