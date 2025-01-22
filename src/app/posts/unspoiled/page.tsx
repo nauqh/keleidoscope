@@ -1,17 +1,22 @@
+"use client";
 import React from "react";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
 import styles from "./page.module.css";
 import { Fade } from "react-awesome-reveal";
+import { usePathname } from "next/navigation";
 
 const page = () => {
+	const pathname = usePathname();
 	return (
 		<Fade cascade={true}>
 			<div className="container mx-auto px-4 py-5">
 				<h2 className="text-sm font-semibold text-[hsl(var(--secondary-color))]">
 					DECLUTER
 				</h2>
-				<h1 className="text-4xl my-2">Unspoiled</h1>
+				<h1 className="text-4xl my-2 capitalize">
+					{pathname.split("/").pop()}
+				</h1>
 				<div className="flex items-center gap-2">
 					<Avatar>
 						<AvatarImage src="/self.jpg" alt="@shadcn" />
