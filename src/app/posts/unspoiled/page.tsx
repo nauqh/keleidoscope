@@ -1,44 +1,47 @@
 "use client";
-import React from "react";
+import React, { Suspense } from "react";
 import Link from "next/link";
 import styles from "./page.module.css";
 import { Fade } from "react-awesome-reveal";
 import { usePathname, useSearchParams } from "next/navigation";
 import Image from "next/image";
 
-const Page = () => {
+const PostHeader = () => {
 	const pathname = usePathname();
 	const searchParams = useSearchParams();
+
+	return (
+		<div className="container mx-auto px-4 py-5">
+			<h2 className="text-sm font-semibold text-[hsl(var(--secondary-color))]">
+				{searchParams.get("tags")?.toUpperCase().split(",").join(" ")}
+			</h2>
+			<h1 className="text-4xl my-2 capitalize">
+				{pathname.split("/").pop()}
+			</h1>
+			<span className="tracking-wider text-sm">
+				WRITTEN by{" "}
+				<Link
+					href="/"
+					className="hover:text-[hsl(var(--secondary-color))] uppercase"
+				>
+					{" "}
+					Keleidoscope
+				</Link>
+			</span>
+		</div>
+	);
+};
+
+const Page = () => {
 	return (
 		<Fade cascade={true}>
-			<div className="container mx-auto px-4 py-5">
-				<h2 className="text-sm font-semibold text-[hsl(var(--secondary-color))]">
-					{searchParams
-						.get("tags")
-						?.toUpperCase()
-						.split(",")
-						.join(" ")}
-				</h2>
-				<h1 className="text-4xl my-2 capitalize">
-					{pathname.split("/").pop()}
-				</h1>
-				<span className="tracking-wider text-sm">
-					WRITTEN by{" "}
-					<Link
-						href="/"
-						className="hover:text-[hsl(var(--secondary-color))] uppercase"
-					>
-						{" "}
-						Keleidoscope
-					</Link>
-				</span>
-			</div>
+			<Suspense fallback={<div>Loading...</div>}>
+				<PostHeader />
+			</Suspense>
 
 			<div
 				className="container mx-auto px-4 py-5"
-				style={{
-					marginBottom: "10rem",
-				}}
+				style={{ marginBottom: "10rem" }}
 			>
 				<Image
 					src="/unspoiled.jpg"
