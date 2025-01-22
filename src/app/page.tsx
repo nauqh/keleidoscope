@@ -1,13 +1,20 @@
+"use client";
+import { useEffect } from "react";
 import Post from "@/components/Post";
 import Typewriter from "@/components/Typewriter";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import mailgo from "mailgo";
 
 import { Fade } from "react-awesome-reveal";
 
 import { FaInstagram, FaLinkedin, FaRegEnvelope } from "react-icons/fa";
 
 const page = () => {
+	useEffect(() => {
+		mailgo();
+	}, []);
+
 	return (
 		<div>
 			<Fade cascade={true}>
@@ -26,7 +33,7 @@ const page = () => {
 						</Link>
 					</li>
 					<li>
-						<Link href="#">
+						<Link href="mailto:hodominhquan.self@gmail.com">
 							<FaRegEnvelope className="text-2xl transition-all duration-300 hover:scale-110" />
 						</Link>
 					</li>
