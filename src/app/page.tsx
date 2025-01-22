@@ -56,19 +56,19 @@ const Page = () => {
 						<Fade cascade={true} triggerOnce={true}>
 							<div className="break-inside-avoid">
 								<Post
-									title="A SUNNY PLACE FOR SHADY PEOPLE"
-									img="https://s3-eu-west-1.amazonaws.com/asthebirdfliesblog.com/content/images/posts/beige-minimal-aesthetic-photo-collage_x960.jpg?v=1"
-									posted_at="2023-12-14T15:30:00Z"
-									tags={["fiction", "short story"]}
-								/>
-							</div>
-							<div className="break-inside-avoid">
-								<Post
 									title="UNSPOILED"
 									img="https://openaccess-cdn.clevelandart.org/1971.47/1971.47_print.jpg"
 									posted_at="2023-12-14T15:30:00Z"
 									description="The cotton drifted, unfolding the pristine blue that played a melodic acoustic soundtrack by my ear. The maple leaves rustling beneath my striped pyjamas pants joined the serene tweeting, occupying the main performing slot."
 									tags={["poetry", "nature"]}
+								/>
+							</div>
+							<div className="break-inside-avoid">
+								<Post
+									title="A SUNNY PLACE FOR SHADY PEOPLE"
+									img="https://s3-eu-west-1.amazonaws.com/asthebirdfliesblog.com/content/images/posts/beige-minimal-aesthetic-photo-collage_x960.jpg?v=1"
+									posted_at="2023-12-14T15:30:00Z"
+									tags={["fiction", "short story"]}
 								/>
 							</div>
 							<div className="break-inside-avoid">
