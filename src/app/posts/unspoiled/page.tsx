@@ -39,7 +39,7 @@ const Page = () => {
 					marginBottom: "10rem",
 				}}
 			>
-				<h2 className="text-lg font-semibold text-center leading-relaxed">
+				<h2 className="text-lg text-center leading-relaxed my-10">
 					We all had been wanting plums to have a strawberry
 					aftertaste.
 				</h2>
