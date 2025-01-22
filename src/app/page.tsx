@@ -10,7 +10,7 @@ import { Fade } from "react-awesome-reveal";
 
 import { FaInstagram, FaLinkedin, FaRegEnvelope } from "react-icons/fa";
 
-const page = () => {
+const Page = () => {
 	useEffect(() => {
 		mailgo();
 	}, []);
@@ -96,4 +96,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default Page;
