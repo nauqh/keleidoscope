@@ -29,7 +29,7 @@ const Nav = () => {
 					</button>
 
 					{/* Desktop menu */}
-					<ul className="hidden md:flex space-x-8">
+					<ul className="hidden md:flex space-x-4">
 						{["Home", "About", "Popular"].map((text) => (
 							<li
 								key={text}

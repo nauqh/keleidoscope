@@ -9,7 +9,7 @@ const Footer = () => {
 			}}
 		>
 			<div className="my-4 flex justify-between tracking-wider">
-				<div className="mx-auto font-light">
+				<div className="mx-auto text-sm font-light text-gray-500">
 					<span>© {new Date().getFullYear()} Keleidoscope. </span>
 					Made with 🤎 by{" "}
 					<span className="transition-transform duration-300 hover:scale-110 inline-block text-[hsl(var(--secondary-color))]">
