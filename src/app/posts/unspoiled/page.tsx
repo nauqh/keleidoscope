@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 import { Fade } from "react-awesome-reveal";
 import { usePathname } from "next/navigation";
 
-const page = () => {
+const Page = () => {
 	const pathname = usePathname();
 	return (
 		<Fade cascade={true}>
@@ -231,4 +231,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default Page;
