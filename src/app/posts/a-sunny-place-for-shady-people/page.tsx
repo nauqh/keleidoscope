@@ -1,6 +1,7 @@
 import React from "react";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
+import styles from "./page.module.css";
 
 const page = () => {
 	return (
@@ -26,15 +27,18 @@ const page = () => {
 					</span>
 				</div>
 			</div>
-			<div className="container mx-auto px-4 py-5">
+			<div
+				className="container mx-auto px-4 py-5"
+				style={{
+					marginBottom: "10rem",
+				}}
+			>
 				<h2 className="text-lg font-semibold text-center leading-relaxed">
 					We all had been wanting plums to have a strawberry
 					aftertaste.
 				</h2>
-				<p className="italic text-xl leading-relaxed">
-					Strawberry-picking
-				</p>
-				<p className="text-xl leading-relaxed">
+				<p className={styles.italicText}>Strawberry-picking</p>
+				<p className={styles.baseText}>
 					She was late. He waved at her under the traffic light as she
 					jumped off the tram and squeezed through the weekend crowd.
 					She did not look into his eyes but could feel his gaze glued
@@ -52,17 +56,15 @@ const page = () => {
 					picking got her mind fully sucked up. She missed the
 					question.
 				</p>
-				<p className="text-xl leading-relaxed">
+				<p className={styles.baseText}>
 					She <span className="italic">misses</span> it.
 				</p>
-				<p className="text-xl italic leading-relaxed">
-					August 4, 20xx, 10:09 pm
-				</p>
+				<p className={styles.italicText}>August 4, 20xx, 10:09 pm</p>
 
-				<p className="text-xl text-right italic leading-relaxed">
+				<p className={styles.rightAlignedItalicText}>
 					Plums in the dark
 				</p>
-				<p className="text-xl text-right leading-relaxed">
+				<p className={styles.rightAlignedText}>
 					He was late. She whispered into her tiny hands and rubbed
 					them together. "A table for one, please," she did not bother
 					to wait. Her hands hastily embraced the sweet, slightly
@@ -82,20 +84,14 @@ const page = () => {
 					ambiance. Biting lips, the scrumptious plum bit in her mouth
 					rotten. Her mouth got paralysed. She heard the question.
 				</p>
-				<p className="text-xl text-right italic leading-relaxed">
+				<p className={styles.rightAlignedItalicText}>
 					March 25, 20xx, 01:34 am
 				</p>
 
-				<p
-					className="text-xl italic leading-relaxed"
-					style={{ textIndent: "4rem" }}
-				>
+				<p className={styles.indentedItalicText}>
 					Da-dum, da-dum, da-dum,
 				</p>
-				<p
-					className="text-xl leading-relaxed"
-					style={{ textIndent: "4rem" }}
-				>
+				<p className={styles.indentedText}>
 					Nostrils were about to explode. Head tilted. Chin lifted. I
 					went a bit overboard with grasping the fresh autumn breeze
 					into my lungs. Cough, cough. If Granny was here, she would
@@ -120,10 +116,7 @@ const page = () => {
 					the hundred-year-old gnarled oak to the deep emerald grassy
 					hill over there.
 				</p>
-				<p
-					className="text-xl leading-relaxed"
-					style={{ textIndent: "4rem" }}
-				>
+				<p className={styles.indentedText}>
 					Crisp into the crispy. The gust of season tousled my
 					thinning hair, tousled the crusty gold that tickled my bare
 					feet. I inched my way through the lustre sugarbush, feeling
@@ -134,16 +127,10 @@ const page = () => {
 					ever skimmed through. She spared the rod to un-spoil the
 					child. I'm her child.
 				</p>
-				<p
-					className="text-xl leading-relaxed"
-					style={{ textIndent: "4rem" }}
-				>
+				<p className={styles.indentedText}>
 					"What do we have for today?"
 				</p>
-				<p
-					className="text-xl leading-relaxed"
-					style={{ textIndent: "4rem" }}
-				>
+				<p className={styles.indentedText}>
 					No more strawberries, please. I devoured my intrusive
 					thoughts as soon as my tongue felt slippery. Three months –
 					it would even make total sense if I woke up one day seeing
@@ -156,16 +143,10 @@ const page = () => {
 					Pinching my nose while chewing. I thought it was better to
 					do something before I could sniff out an aching daydream.
 				</p>
-				<p
-					className="text-xl leading-relaxed italic"
-					style={{ textIndent: "4rem" }}
-				>
+				<p className={styles.indentedItalicText}>
 					“Plum for today, yeah?” She cackled.
 				</p>
-				<p
-					className="text-xl leading-relaxed"
-					style={{ textIndent: "4rem" }}
-				>
+				<p className={styles.indentedText}>
 					Rubbing my hands a few times until enough warmth was there
 					to fuel my self-reassurance, I cupped them together, getting
 					ready for a good catch. A-choo. Her sneeze sent the withered
@@ -174,10 +155,7 @@ const page = () => {
 					now came in handy. The plum was vigorously polished and
 					ready to be chomped away.
 				</p>
-				<p
-					className="text-xl leading-relaxed"
-					style={{ textIndent: "4rem" }}
-				>
+				<p className={styles.indentedText}>
 					It sat perfectly in my palm. Rounded. Hues of maroon red
 					weaved into the glossy dark purple, tailoring a luminously
 					dandy appearance. Stroking its satiny smooth surface, I was
@@ -189,28 +167,24 @@ const page = () => {
 					Mesmerising. I would beg for more. Mouth wide opened, I
 					shovelled the very last central bit with eagerness.
 				</p>
-				<p
-					className="text-xl leading-relaxed"
-					style={{ textIndent: "4rem" }}
-				>
-					<span className="text-bold">Awk!</span> A tingling chime
-					snapped me out of the coma. It was subtle at first.
-					Something like a bullet just tightened a knot in my
+				<p className={styles.indentedText}>
+					<span className="font-semibold italic">Awk!</span> A
+					tingling chime snapped me out of the coma. It was subtle at
+					first. Something like a bullet just tightened a knot in my
 					oesophagus, and somehow forgot to buy the ticket to an
 					abdominal carnival. Feeling stiff. Stuffed. Strained. It
 					should be non-fatal. Tongue endeavoured to nail a backward
-					spin to the vocal chord. Gulp. Light rain did not satisfy my
-					greed at this point. Gulp. The desire of being inundated.
-					Being flooded. Being washed away in the most severe
-					downpours, torrential rains, and thunderstorms. My gaze
-					crawled up to her crown, hoping for a response to this
+					spin to the vocal chord.{" "}
+					<span className="italic">Gulp</span>. Light rain did not
+					satisfy my greed at this point.{" "}
+					<span className="italic">Gulp</span>. The desire of being
+					inundated. Being flooded. Being washed away in the most
+					severe downpours, torrential rains, and thunderstorms. My
+					gaze crawled up to her crown, hoping for a response to this
 					yearning to flush the plum’s missile shot that was too dry
 					to puke up. Delightfully watching, She spared her rod.
 				</p>
-				<p
-					className="text-xl leading-relaxed"
-					style={{ textIndent: "4rem" }}
-				>
+				<p className={styles.indentedText}>
 					The adrenaline died down, giving way to the excruciating
 					burn of someone pressing his palms against my neck.
 					Screaming in silence, I risk my last gasp of breath to
@@ -231,29 +205,19 @@ const page = () => {
 					tough day, soothed an unsettled mind, and healed a wounded
 					heart.
 				</p>
-				<p
-					className="text-xl leading-relaxed"
-					style={{ textIndent: "4rem" }}
-				>
+				<p className={styles.indentedText}>
 					[An internal order received, waiting to be confirmed: one
 					soft, heavenly sweet bite with a pump of lingering tartness,
 					the non-overbearing type.]
 				</p>
-				<p
-					className="text-xl leading-relaxed"
-					style={{ textIndent: "4rem" }}
-				>
+				<p className={styles.indentedText}>
 					I coughed out crimson. It must be my energy that escaped.
 					Hands loaded with gravity. I must have been over-running.
-					It’s time for a breather. It’s time to un-spoil.
+					It’s time for a breather. It’s time to{" "}
+					<span className="italic">un-spoil</span>.
 				</p>
-				<p
-					className="text-xl leading-relaxed italic"
-					style={{ textIndent: "4rem" }}
-				>
-					da…dum…da…dum…da……
-				</p>
-				<p className="text-xl leading-relaxed text-right">
+				<p className={styles.indentedItalicText}>da…dum…da…dum…da……</p>
+				<p className={styles.rightAlignedItalicText}>
 					Shhh. It’s bedtime.
 				</p>
 			</div>
