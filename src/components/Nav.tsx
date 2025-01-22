@@ -22,9 +22,9 @@ const Nav = () => {
 						onClick={() => setIsMenuOpen(!isMenuOpen)}
 					>
 						{isMenuOpen ? (
-							<FaTimes className="w-6 h-6" />
+							<FaTimes className="w-6 h-6 text-gray-800" />
 						) : (
-							<FaBars className="w-6 h-6" />
+							<FaBars className="w-6 h-6 text-gray-800" />
 						)}
 					</button>
 
@@ -35,7 +35,14 @@ const Nav = () => {
 								key={text}
 								className="duration-300 hover:scale-110 hover:text-[hsl(var(--secondary-color))] px-3 py-2 rounded-md"
 							>
-								<Link href={`/${text.toLowerCase()}`}>
+								<Link
+									href={
+										text === "Home"
+											? "/"
+											: `/${text.toLowerCase()}`
+									}
+									onClick={() => setIsMenuOpen(false)}
+								>
 									{text}
 								</Link>
 							</li>
@@ -62,13 +69,20 @@ const Nav = () => {
 							: "max-h-0 opacity-0"
 					}`}
 				>
-					<ul className="pb-4 text-center">
+					<ul className="pb-4 absolute left-0 bg-[#faf6f1] shadow-md rounded-b-lg w-48">
 						{["Home", "About", "Contact"].map((text) => (
 							<li
 								key={text}
-								className="hover:bg-gray-100 hover:text-[hsl(var(--secondary-color))] px-3 py-2 rounded-md"
+								className="hover:bg-[#f5efe7] hover:text-[hsl(var(--secondary-color))] px-3 py-2 rounded-md"
 							>
-								<Link href={`/${text.toLowerCase()}`}>
+								<Link
+									href={
+										text === "Home"
+											? "/"
+											: `/${text.toLowerCase()}`
+									}
+									onClick={() => setIsMenuOpen(false)}
+								>
 									{text}
 								</Link>
 							</li>
