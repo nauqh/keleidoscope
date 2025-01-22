@@ -47,6 +47,15 @@ const Page = () => {
 					height={1080}
 					className="rounded-md h-auto w-auto"
 				></Image>
+				<p className="text-xs text-gray-500 mt-2 text-center">
+					Image from{" "}
+					<a
+						href="https://unsplash.com"
+						className="hover:text-[hsl(var(--secondary-color))]"
+					>
+						Unsplash
+					</a>
+				</p>
 				<h2 className="text-lg text-center leading-relaxed my-10">
 					We all had been wanting plums to have a strawberry
 					aftertaste.
