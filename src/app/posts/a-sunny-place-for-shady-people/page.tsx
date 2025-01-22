@@ -156,6 +156,106 @@ const page = () => {
 					Pinching my nose while chewing. I thought it was better to
 					do something before I could sniff out an aching daydream.
 				</p>
+				<p
+					className="text-xl leading-relaxed italic"
+					style={{ textIndent: "4rem" }}
+				>
+					“Plum for today, yeah?” She cackled.
+				</p>
+				<p
+					className="text-xl leading-relaxed"
+					style={{ textIndent: "4rem" }}
+				>
+					Rubbing my hands a few times until enough warmth was there
+					to fuel my self-reassurance, I cupped them together, getting
+					ready for a good catch. A-choo. Her sneeze sent the withered
+					maple leaves jiggling on the creamy soil, composing an
+					aromatically brittle soundtrack. Nice catch! My long sleeve
+					now came in handy. The plum was vigorously polished and
+					ready to be chomped away.
+				</p>
+				<p
+					className="text-xl leading-relaxed"
+					style={{ textIndent: "4rem" }}
+				>
+					It sat perfectly in my palm. Rounded. Hues of maroon red
+					weaved into the glossy dark purple, tailoring a luminously
+					dandy appearance. Stroking its satiny smooth surface, I was
+					more than ready to fulfil my wish of a sensuous juicy bite.
+					The sour crunch was suavely followed by the sweet, velvety
+					flesh that carried a muted, tangy undertone. My thirst was
+					quenched to its sublime as if there had been a sudden
+					drizzle on parched lands. Irresistible. Addictive.
+					Mesmerising. I would beg for more. Mouth wide opened, I
+					shovelled the very last central bit with eagerness.
+				</p>
+				<p
+					className="text-xl leading-relaxed"
+					style={{ textIndent: "4rem" }}
+				>
+					<span className="text-bold">Awk!</span> A tingling chime
+					snapped me out of the coma. It was subtle at first.
+					Something like a bullet just tightened a knot in my
+					oesophagus, and somehow forgot to buy the ticket to an
+					abdominal carnival. Feeling stiff. Stuffed. Strained. It
+					should be non-fatal. Tongue endeavoured to nail a backward
+					spin to the vocal chord. Gulp. Light rain did not satisfy my
+					greed at this point. Gulp. The desire of being inundated.
+					Being flooded. Being washed away in the most severe
+					downpours, torrential rains, and thunderstorms. My gaze
+					crawled up to her crown, hoping for a response to this
+					yearning to flush the plum’s missile shot that was too dry
+					to puke up. Delightfully watching, She spared her rod.
+				</p>
+				<p
+					className="text-xl leading-relaxed"
+					style={{ textIndent: "4rem" }}
+				>
+					The adrenaline died down, giving way to the excruciating
+					burn of someone pressing his palms against my neck.
+					Screaming in silence, I risk my last gasp of breath to
+					spring up and rush. To nowhere. To anywhere that I could
+					dump this suffocation. A stale, metallic pungency provoked,
+					with an oddly familiar sweet aftertaste lurking around the
+					corner. My taste buds recalled the very first sensations of
+					plucking the scarlet heart from its vine, popping it between
+					shrunken lips, and letting it freely take the slide. Three
+					months of hitting the bull’s eye in one bite had made the
+					bed for me to sleep on my laurels. I slept on the feathery
+					pressure of vibrant ripe strawberries overflowing from my
+					front pockets. A cooling heart to touch. A cooling heart to
+					tongue. A tender soul was hidden behind a bumpy body. It was
+					like poking a jelly bead, which took minimal effort to crush
+					through the crunchy coat to attain the exquisite squeeze of
+					essence. A small but mighty essence that fondly softened a
+					tough day, soothed an unsettled mind, and healed a wounded
+					heart.
+				</p>
+				<p
+					className="text-xl leading-relaxed"
+					style={{ textIndent: "4rem" }}
+				>
+					[An internal order received, waiting to be confirmed: one
+					soft, heavenly sweet bite with a pump of lingering tartness,
+					the non-overbearing type.]
+				</p>
+				<p
+					className="text-xl leading-relaxed"
+					style={{ textIndent: "4rem" }}
+				>
+					I coughed out crimson. It must be my energy that escaped.
+					Hands loaded with gravity. I must have been over-running.
+					It’s time for a breather. It’s time to un-spoil.
+				</p>
+				<p
+					className="text-xl leading-relaxed italic"
+					style={{ textIndent: "4rem" }}
+				>
+					da…dum…da…dum…da……
+				</p>
+				<p className="text-xl leading-relaxed text-right">
+					Shhh. It’s bedtime.
+				</p>
 			</div>
 		</>
 	);
