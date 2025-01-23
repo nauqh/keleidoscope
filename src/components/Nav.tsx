@@ -37,21 +37,47 @@ const Nav = () => {
 
 					{/* Desktop menu */}
 					<ul className="hidden md:flex space-x-4">
-						{["Home", "About", "Popular"].map((text) => (
+						{["Home", "About", "Collection"].map((text) => (
 							<li
 								key={text}
-								className="duration-300 hover:scale-110 hover:text-[hsl(var(--secondary-color))] px-3 py-2 rounded-md"
+								className="duration-300 hover:scale-110 px-3 py-2 rounded-md relative group"
 							>
-								<Link
-									href={
-										text === "Home"
-											? "/"
-											: `/${text.toLowerCase()}`
-									}
-									onClick={() => setIsMenuOpen(false)}
-								>
-									{text}
-								</Link>
+								{text === "Collection" ? (
+									<div>
+										<Link href="/collection">{text}</Link>
+										<ul className="hidden group-hover:block absolute left-0 bg-white shadow-md rounded-lg w-48 mt-2">
+											{[
+												{
+													title: "Dream Journal",
+													path: "dream-journal",
+												},
+												{ title: "Life", path: "life" },
+											].map((item) => (
+												<li
+													key={item.path}
+													className="hover:bg-[#f5efe7] hover:text-[hsl(var(--secondary-color))] px-3 py-2 rounded-md"
+												>
+													<Link
+														href={`/collection/${item.path}`}
+													>
+														{item.title}
+													</Link>
+												</li>
+											))}
+										</ul>
+									</div>
+								) : (
+									<Link
+										href={
+											text === "Home"
+												? "/"
+												: `/${text.toLowerCase()}`
+										}
+										onClick={() => setIsMenuOpen(false)}
+									>
+										{text}
+									</Link>
+								)}
 							</li>
 						))}
 					</ul>
@@ -77,21 +103,62 @@ const Nav = () => {
 					}`}
 				>
 					<ul className="pb-4 absolute left-0 bg-[#faf6f1] shadow-md rounded-b-lg w-48">
-						{["Home", "About", "Popular"].map((text) => (
-							<li
-								key={text}
-								className="hover:bg-[#f5efe7] hover:text-[hsl(var(--secondary-color))] px-3 py-2 rounded-md"
-							>
-								<Link
-									href={
-										text === "Home"
-											? "/"
-											: `/${text.toLowerCase()}`
-									}
-									onClick={() => setIsMenuOpen(false)}
-								>
-									{text}
-								</Link>
+						{["Home", "About", "Collection"].map((text) => (
+							<li key={text} className="px-3 py-2 rounded-md">
+								{text === "Collection" ? (
+									<div>
+										<button
+											className="w-full text-left"
+											onClick={(e) => {
+												e.preventDefault();
+												const submenu =
+													e.currentTarget
+														.nextElementSibling;
+												if (submenu) {
+													submenu.classList.toggle(
+														"hidden"
+													);
+												}
+											}}
+										>
+											{text}
+										</button>
+										<ul className="mt-2 ml-4 hidden">
+											{[
+												{
+													title: "Dream Journal",
+													path: "dream-journal",
+												},
+												{ title: "Life", path: "life" },
+											].map((item) => (
+												<li
+													key={item.path}
+													className="hover:bg-[#f5efe7] hover:text-[hsl(var(--secondary-color))] px-3 py-2 rounded-md"
+												>
+													<Link
+														href={`/collection/${item.path}`}
+														onClick={() =>
+															setIsMenuOpen(false)
+														}
+													>
+														{item.title}
+													</Link>
+												</li>
+											))}
+										</ul>
+									</div>
+								) : (
+									<Link
+										href={
+											text === "Home"
+												? "/"
+												: `/${text.toLowerCase()}`
+										}
+										onClick={() => setIsMenuOpen(false)}
+									>
+										{text}
+									</Link>
+								)}
 							</li>
 						))}
 						{/* Social links for mobile */}
