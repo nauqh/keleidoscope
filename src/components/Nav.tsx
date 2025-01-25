@@ -44,7 +44,9 @@ const Nav = () => {
 							>
 								{text === "Collection" ? (
 									<div>
-										<Link href="/collection">{text}</Link>
+										<Link href="/posts/collection">
+											{text}
+										</Link>
 										<ul className="hidden group-hover:block absolute left-0 bg-white shadow-md rounded-lg w-48 mt-2">
 											{[
 												{
@@ -58,7 +60,7 @@ const Nav = () => {
 													className="hover:bg-[#f5efe7] hover:text-[hsl(var(--secondary-color))] px-3 py-2 rounded-md"
 												>
 													<Link
-														href={`/collection/${item.path}`}
+														href={`/posts/collection/${item.path}`}
 													>
 														{item.title}
 													</Link>
@@ -136,7 +138,7 @@ const Nav = () => {
 													className="hover:bg-[#f5efe7] hover:text-[hsl(var(--secondary-color))] px-3 py-2 rounded-md"
 												>
 													<Link
-														href={`/collection/${item.path}`}
+														href={`/posts/collection/${item.path}`}
 														onClick={() =>
 															setIsMenuOpen(false)
 														}
