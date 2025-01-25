@@ -1,0 +1,17 @@
+.baseText {
+	@apply text-xl leading-relaxed;
+}
+
+.indentedText {
+	@apply text-xl leading-relaxed;
+	text-indent: 4rem;
+}
+
+.italicText {
+	@apply text-xl leading-relaxed italic;
+}
+
+.indentedItalicText {
+	@apply text-xl leading-relaxed italic;
+	text-indent: 4rem;
+}
