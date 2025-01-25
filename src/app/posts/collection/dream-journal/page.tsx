@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import styles from "./page.module.css";
 import HoverCard from "@/components/HoverCard";
+import styles from "./page.module.css";
 
 const Paragraph = ({ text }: { text: string }) => (
 	<p className={styles.indentedText}>{text}</p>
@@ -37,7 +37,7 @@ const paragraphs3 = [
 	"Undeniable fear battling with odd fascination. My urge to escape is pinned down by twisted ankles as if they’ve forgotten their place. Her dainty silk threads elegantly brush against my skin as she suffocates me in her haunting orbit. My disjointed leg muscles desperately drag my body away with monumental effort. Yet my mind is caught. I grow addicted to that terrifying beauty.",
 ];
 
-const page = () => {
+const Dream = () => {
 	return (
 		<>
 			<Image
@@ -137,4 +137,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default Dream;
