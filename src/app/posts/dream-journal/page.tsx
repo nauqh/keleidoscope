@@ -7,6 +7,9 @@ import styles from "./page.module.css";
 const Paragraph = ({ text }: { text: string }) => (
 	<p className={styles.indentedText}>{text}</p>
 );
+const Paragraph2 = ({ text }: { text: string }) => (
+	<p className={styles.baseText}>{text}</p>
+);
 
 const paragraphs = [
 	"Skin burns. My lungs grasp for air that can't be found. Damp earth presses into my nostrils, my mouth. I'm on the ground. No. I'm in it. I try to move my fingers, but the stench of stale blood weighs down my heavy eyelids. A battlefield of death nettles refuses to let go as I try to crawl through. Thorns dig deeper into my flesh. Someone else is near, scraping the earth. It could be their claws or something peculiar that I can't think of right away. Something is ripping the brambles, gaining on me. They hastily drag through the soil, through the thickets. Always closer.",
@@ -70,6 +73,9 @@ const paragraphs7 = [
 	"Two years on, still confused. One tutor told me never to skip the drama because no one cares about happy stories, while another was horrified by that.",
 	"Yet I’ve cried more than my entire life combined. I cried as I wrote about my nightmares. I cried as I wrote about the ringing in my ear. The last time I cried was yesterday when watching Trump’s granddaughter describing him as a typical grandpa. I’m actually tearing up when writing this.",
 	"It’s tough. But fascinating. Storytelling has allowed me to, as Nam Le said:",
+];
+
+const paragraphs8 = [
 	"“Hold to trauma",
 	"Even if it never happened to you",
 	"You may claim it.”",
@@ -241,6 +247,9 @@ const Dream = () => {
 			</p>
 			{paragraphs7.map((text, index) => (
 				<Paragraph key={index} text={text} />
+			))}
+			{paragraphs8.map((text, index) => (
+				<Paragraph2 key={index} text={text} />
 			))}
 		</>
 	);
