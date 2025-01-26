@@ -6,6 +6,10 @@
 	@apply text-xl leading-relaxed;
 	text-indent: 4rem;
 }
+.indentedTextList {
+	@apply text-xl leading-relaxed;
+	text-indent: 2rem;
+}
 
 .italicText {
 	@apply text-xl leading-relaxed italic;
