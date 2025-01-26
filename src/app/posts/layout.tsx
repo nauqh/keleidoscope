@@ -42,7 +42,7 @@ export default function PostLayout({
 				</Suspense>
 				<div
 					className="container mx-auto px-4 py-5"
-					style={{ marginBottom: "10rem" }}
+					style={{ marginBottom: "5rem" }}
 				>
 					{children}
 				</div>
