@@ -16,11 +16,11 @@ const InstagramEmbed = dynamic(
 const page = () => {
 	return (
 		<>
-			<div className="container mx-auto px-4 py-5">
+			<div className="container mx-auto py-5">
 				<Fade cascade={true} triggerOnce={true}>
 					<Typewriter text="unreliable narrator" delay={100} />
 					<div className="container mx-auto w-[80%]">
-						<div className="flex my-8">
+						<div className="flex flex-col sm:flex-row my-8">
 							<div>
 								<h1 className="text-center text-2xl tracking-wider uppercase">
 									About me.
@@ -28,8 +28,8 @@ const page = () => {
 								<Image
 									src="/self.jpg"
 									alt="Authors photo"
-									width={200}
-									height={200}
+									width={180}
+									height={180}
 									className="rounded-md my-12"
 								/>
 							</div>
@@ -91,7 +91,7 @@ const page = () => {
 							</button>
 						</div>
 					</div>
-					<div className="my-8 rounded-md">
+					<div className="my-8">
 						<div className="flex flex-col sm:flex-row gap-8 justify-around">
 							<div>
 								<h1 className="text-center text-xl">
