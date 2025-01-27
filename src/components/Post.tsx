@@ -24,7 +24,7 @@ const Post = ({ title, img, posted_at, description, tags }: PostProps) => {
 				href={`/posts/${
 					tags?.includes("collection") ? "collection/" : ""
 				}${title.toLowerCase().replace(/\s+/g, "-")}${
-					tags ? `?tags=${tags.join(",")}` : ""
+					tags ? `?tags=${tags.join(",")}&img=${img}` : `?img=${img}`
 				}`}
 			>
 				<CardHeader>

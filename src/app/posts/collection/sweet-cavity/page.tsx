@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import styles from "../page.module.css";
+
+import { useSearchParams } from "next/navigation";
 
 const Paragraph = ({ text }: { text: string }) => (
 	<p className={styles.baseText}>{text}</p>
@@ -41,10 +44,12 @@ const paragraphs = [
 ];
 
 function SweetCavity() {
+	const searchParams = useSearchParams();
+
 	return (
 		<>
 			<Image
-				src="/sweet-cavity.jpeg"
+				src={searchParams.get("img") || ""}
 				alt="Unspoiled"
 				width={1920}
 				height={1080}

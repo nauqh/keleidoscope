@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import HoverCard from "@/components/HoverCard";
 import styles from "./page.module.css";
+import { useSearchParams } from "next/navigation";
 
 const Paragraph = ({ text }: { text: string }) => (
 	<p className={styles.baseText}>{text}</p>
@@ -82,10 +83,12 @@ const paragraphs8 = [
 	"And I’m ready, for some more good tears.",
 ];
 const Dream = () => {
+	const searchParams = useSearchParams();
+
 	return (
 		<>
 			<Image
-				src="https://images8.alphacoders.com/119/1197975.jpg"
+				src={searchParams.get("img") || ""}
 				alt="Unspoiled"
 				width={1920}
 				height={1080}

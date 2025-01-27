@@ -2,12 +2,15 @@
 import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
 
 const Page = () => {
+	const searchParams = useSearchParams();
+
 	return (
 		<>
 			<Image
-				src="https://openaccess-cdn.clevelandart.org/1971.47/1971.47_print.jpg"
+				src={searchParams.get("img") || ""}
 				alt="Unspoiled"
 				width={1920}
 				height={1080}
