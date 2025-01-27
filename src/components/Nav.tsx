@@ -50,8 +50,8 @@ const Nav = () => {
 										<ul className="hidden group-hover:block absolute left-0 bg-white shadow-md rounded-lg w-48 mt-2">
 											{[
 												{
-													title: "Dream Journal",
-													path: "dream-journal",
+													title: "Sweet Cavity",
+													path: "sweet-cavity",
 												},
 												{ title: "Life", path: "life" },
 											].map((item) => (
@@ -128,8 +128,8 @@ const Nav = () => {
 										<ul className="mt-2 ml-4 hidden">
 											{[
 												{
-													title: "Dream Journal",
-													path: "dream-journal",
+													title: "Sweet Cavity",
+													path: "sweet-cavity",
 												},
 												{ title: "Life", path: "life" },
 											].map((item) => (
