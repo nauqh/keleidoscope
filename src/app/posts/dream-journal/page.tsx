@@ -1,9 +1,8 @@
 "use client";
 import React, { Suspense } from "react";
-import Image from "next/image";
 import HoverCard from "@/components/HoverCard";
 import styles from "./page.module.css";
-import { useSearchParams } from "next/navigation";
+import ImageHeader from "@/components/ImageHeader";
 
 const Paragraph = ({ text }: { text: string }) => (
 	<p className={styles.baseText}>{text}</p>
@@ -82,19 +81,12 @@ const paragraphs8 = [
 	"You may claim it.”",
 	"And I’m ready, for some more good tears.",
 ];
-const Dream = () => {
-	const searchParams = useSearchParams();
 
+const Dream = () => {
 	return (
 		<>
 			<Suspense fallback={<div>Loading...</div>}>
-				<Image
-					src={searchParams.get("img") || ""}
-					alt="Unspoiled"
-					width={1920}
-					height={1080}
-					className="rounded-md h-full w-full"
-				/>
+				<ImageHeader />
 			</Suspense>
 			<p className="text-xs text-gray-500 mt-2 text-center">
 				Image from{" "}
