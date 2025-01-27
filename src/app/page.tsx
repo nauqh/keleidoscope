@@ -67,7 +67,7 @@ const Page = () => {
 								img="https://openaccess-cdn.clevelandart.org/1971.47/1971.47_print.jpg"
 								posted_at="2023-12-14T15:30:00Z"
 								description="The cotton drifted, unfolding the pristine blue that played a melodic acoustic soundtrack by my ear. The maple leaves rustling beneath my striped pyjamas pants joined the serene tweeting, occupying the main performing slot."
-								tags={["poetry", "nature"]}
+								tags={["short story", "nature"]}
 							/>
 
 							<Post
@@ -75,7 +75,7 @@ const Page = () => {
 								img="https://static01.nyt.com/images/2022/03/01/arts/28flora1/28flora1-videoSixteenByNineJumbo1600.jpg"
 								posted_at="2023-12-15T12:00:00Z"
 								description="Sweet Cavity can be enjoyed as an experimental sweet menu, my attempt to figure out the ultimate etiquette to devour the umami of companionship. The bonbon textures of language and structure serve to pierce, to dip, to scoop, to shovel in unique ways, challenging your poetic pancreas."
-								tags={["fiction", "collection"]}
+								tags={["poetry", "collection"]}
 							/>
 							<Post
 								title="NAOMI"
