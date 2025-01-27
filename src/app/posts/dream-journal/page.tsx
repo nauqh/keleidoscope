@@ -5,7 +5,7 @@ import HoverCard from "@/components/HoverCard";
 import styles from "./page.module.css";
 
 const Paragraph = ({ text }: { text: string }) => (
-	<p className={styles.indentedText}>{text}</p>
+	<p className={styles.baseText}>{text}</p>
 );
 const Paragraph2 = ({ text }: { text: string }) => (
 	<p className={styles.baseText}>{text}</p>
@@ -113,7 +113,7 @@ const Dream = () => {
 			<div className="flex items-center justify-center">
 				<span className="text-2xl">#</span>
 			</div>
-			<p className={`${styles.indentedText} my-4`}>
+			<p className={`${styles.baseText} my-4`}>
 				I dream a lot. But I don’t chase – I hunt them. After all, as
 				people say, dreams don’t work unless you do.
 			</p>
@@ -164,7 +164,7 @@ const Dream = () => {
 			{paragraphs4.map((text, index) => (
 				<Paragraph key={index} text={text} />
 			))}
-			<p className={styles.indentedText}>Reasons to choose Texas:</p>
+			<p className={styles.baseText}>Reasons to choose Texas:</p>
 			<p className={styles.baseText}>
 				1. NASA was right there, and everyone has been going to the East
 				side, so it’s unique. Plus, everything is BIG in Texas, quoted
@@ -175,10 +175,10 @@ const Dream = () => {
 				headquarters in Houston (I know), so she’d love it for us to
 				stay close.
 			</p>
-			<p className={styles.indentedText}>
+			<p className={styles.baseText}>
 				Decent reasons, but none of them would get me to college.
 			</p>
-			<p className={styles.indentedText}>
+			<p className={styles.baseText}>
 				I first applied to Baylor, a Baptist university, as someone
 				whose nationality screamed Buddhism and was raised in a home of
 				scientists. Being brutally honest usually wouldn’t get me
@@ -194,7 +194,7 @@ const Dream = () => {
 			{paragraphs5.map((text, index) => (
 				<Paragraph key={index} text={text} />
 			))}
-			<p className={styles.indentedText}>
+			<p className={styles.baseText}>
 				<s>
 					…. sophomore chemistry lab (I searched up what sixth form
 					means in the American system) … I struggled with titration …
@@ -202,7 +202,7 @@ const Dream = () => {
 					flowed into the base.
 				</s>
 			</p>
-			<p className={styles.indentedText}>
+			<p className={styles.baseText}>
 				… The internal breakdown is still so fresh that I hardly forget.
 				My condition worsened one month before finals…. my parents'
 				divorce tore me… I had to be my younger brother's only emotional
@@ -216,7 +216,7 @@ const Dream = () => {
 					bit of luck, I passed the practical exam.
 				</s>
 			</p>
-			<p className={styles.indentedText}>
+			<p className={styles.baseText}>
 				I was afraid my ‘opportunity’ appeared too unique. If the essay
 				practically wrote itself, besides the messy divorce and Mom’s
 				brutal digs at Dad’s tremors, there would also be how I
@@ -228,7 +228,7 @@ const Dream = () => {
 				to be a pawn in their failing marriage. In short, my teenage
 				years were when I denied my family name.
 			</p>
-			<p className={styles.indentedText}>
+			<p className={styles.baseText}>
 				But to sum up everything, traumatic white lies were marketable,
 				and I was welcomed as a ‘Longhorn.’
 			</p>

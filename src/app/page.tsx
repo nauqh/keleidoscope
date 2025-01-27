@@ -28,7 +28,7 @@ const Page = () => {
 						</Link>
 					</li>
 					<li>
-						<Link href="#">
+						<Link href="/something">
 							<FaLinkedin className="text-2xl transition-all duration-300 hover:scale-110" />
 						</Link>
 					</li>
