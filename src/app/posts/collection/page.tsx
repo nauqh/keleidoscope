@@ -2,13 +2,9 @@
 import { useEffect } from "react";
 import Post from "@/components/Post";
 import Typewriter from "@/components/Typewriter";
-import Link from "next/link";
-import Footer from "@/components/Footer";
 import mailgo from "mailgo";
 
 import { Fade } from "react-awesome-reveal";
-
-import { FaInstagram, FaLinkedin, FaRegEnvelope } from "react-icons/fa";
 
 const Page = () => {
 	useEffect(() => {
