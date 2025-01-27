@@ -81,6 +81,7 @@ const Page = () => {
 								title="NAOMI"
 								img="https://rareplayingcards.com/cdn/shop/files/Frazetta_Art_Museum_Playing_Cards_4100x.jpg?v=1729053104"
 								posted_at="2023-12-14T15:30:00Z"
+								description="Some of my classmates were startled when they saw me on stage, but they applauded. I've never really stepped foot on a stage since. My dad said no. He switched from Ted Talks to Trump."
 								tags={["fiction", "short story"]}
 							/>
 						</Fade>
