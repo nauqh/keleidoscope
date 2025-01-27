@@ -17,7 +17,7 @@ const Page = () => {
 
 	return (
 		<div>
-			<Fade cascade={true}>
+			<Fade cascade={true} triggerOnce={true}>
 				<ul
 					className="hidden md:flex fixed left-8 top-1/2 flex-col gap-2 z-10"
 					id="social"
