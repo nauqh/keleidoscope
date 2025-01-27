@@ -17,7 +17,7 @@ const page = () => {
 	return (
 		<>
 			<div className="container mx-auto px-4 py-5">
-				<Fade cascade={true}>
+				<Fade cascade={true} triggerOnce={true}>
 					<Typewriter text="unreliable narrator" delay={100} />
 					<div className="container mx-auto w-[80%]">
 						<div className="flex my-8">
