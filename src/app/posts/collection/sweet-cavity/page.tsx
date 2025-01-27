@@ -17,7 +17,7 @@ const paragraphs = [
 	"By all means, I was not rejecting or disagreeing with the way most people choose to read this abbreviation aloud, like how January Gill-O’Neil chooses to read it in In The Company of Women:",
 	"“Make me laugh over coffee",
 	"Make it a double, make it frothy",
-	"So it seethes in our deligh",
+	"So it seethes in our delight",
 	"Make my cup overflow",
 	"With your small happiness",
 	"I want to hoot and snort and cackle and chuckle.”",

@@ -1,13 +1,15 @@
 "use client";
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
 
 interface HoverCardProps {
 	title: string;
+	img: string;
 	children: React.ReactNode;
 }
 
-const HoverCard = ({ title, children }: HoverCardProps) => {
+const HoverCard = ({ title, img, children }: HoverCardProps) => {
 	const [isExpanded, setIsExpanded] = useState(false);
 
 	const handleToggle = () => setIsExpanded(!isExpanded);
@@ -26,7 +28,7 @@ const HoverCard = ({ title, children }: HoverCardProps) => {
 			/>
 
 			<Card
-				className="border-none transition-transform duration-300 cursor-pointer mx-auto my-4 hover:-translate-y-2 group"
+				className="border-none transition-transform duration-300 cursor-pointer mx-auto my-4 hover:scale-105 group w-[400px]"
 				onClick={handleToggle}
 				role="button"
 				aria-expanded={isExpanded}
@@ -39,6 +41,13 @@ const HoverCard = ({ title, children }: HoverCardProps) => {
 					<p className="text-center text-sm text-muted-foreground mt-2">
 						Click to read more...
 					</p>
+					<Image
+						src={img}
+						alt="Unspoiled"
+						width={300}
+						height={169}
+						className="rounded-md h-48 w-auto mx-auto object-cover"
+					/>
 				</CardHeader>
 			</Card>
 

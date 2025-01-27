@@ -11,10 +11,10 @@ const PostHeader = () => {
 	return (
 		<div className="container mx-auto px-4 py-5">
 			<h2 className="text-sm font-semibold text-[hsl(var(--secondary-color))]">
-				{searchParams.get("tags")?.toUpperCase().split(",").join(" ")}
+				{searchParams.get("tags")?.toUpperCase().split(",").join("-")}
 			</h2>
 			<h1 className="text-4xl my-2 capitalize">
-				{pathname.split("/").pop()}
+				{pathname.split("/").pop()?.replace(/-/g, " ")}
 			</h1>
 			<span className="tracking-wider text-sm">
 				WRITTEN by{" "}
@@ -22,7 +22,7 @@ const PostHeader = () => {
 					href="/"
 					className="hover:text-[hsl(var(--secondary-color))] uppercase"
 				>
-					Keleidoscope
+					Kel
 				</Link>
 			</span>
 		</div>

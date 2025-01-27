@@ -76,8 +76,8 @@ const Page = () => {
 								tags={["fiction", "collection"]}
 							/>
 							<Post
-								title="A SUNNY PLACE FOR SHADY PEOPLE"
-								img="https://s3-eu-west-1.amazonaws.com/asthebirdfliesblog.com/content/images/posts/beige-minimal-aesthetic-photo-collage_x960.jpg?v=1"
+								title="NAOMI"
+								img="https://rareplayingcards.com/cdn/shop/files/Frazetta_Art_Museum_Playing_Cards_4100x.jpg?v=1729053104"
 								posted_at="2023-12-14T15:30:00Z"
 								tags={["fiction", "short story"]}
 							/>

@@ -102,7 +102,10 @@ const Dream = () => {
 				them, through them.
 			</h2>
 
-			<HoverCard title="Crawl Witch Crawl">
+			<HoverCard
+				title="Crawl Witch Crawl"
+				img="https://i.etsystatic.com/12556283/r/il/f9db23/6294707014/il_fullxfull.6294707014_nm8r.jpg"
+			>
 				{paragraphs.map((text, index) => (
 					<Paragraph key={index} text={text} />
 				))}
@@ -150,7 +153,10 @@ const Dream = () => {
 			{paragraphs2.map((text, index) => (
 				<Paragraph key={index} text={text} />
 			))}
-			<HoverCard title="Queen of Havoc">
+			<HoverCard
+				title="Queen of Havoc"
+				img="https://jamiesherman.com/cdn/shop/files/IMG_0273.jpg?v=1722963507"
+			>
 				{paragraphs3.map((text, index) => (
 					<Paragraph key={index} text={text} />
 				))}
@@ -230,7 +236,10 @@ const Dream = () => {
 				and I was welcomed as a ‘Longhorn.’
 			</p>
 
-			<HoverCard title="I watch my house burning before me">
+			<HoverCard
+				title="I watch my house burning before me"
+				img="https://alexbox.com/wp-content/uploads/2022/01/FireSD.jpg"
+			>
 				{paragraphs6.map((text, index) => (
 					<Paragraph key={index} text={text} />
 				))}
