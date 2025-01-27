@@ -18,6 +18,7 @@ const page = () => {
 		<>
 			<div className="container mx-auto py-5">
 				<Fade cascade={true} triggerOnce={true}>
+					<Typewriter text="Read with a grain of salt" delay={100} />
 					<div className="container mx-auto w-[80%]">
 						<div className="flex flex-col sm:flex-row my-8">
 							<div>
@@ -32,7 +33,7 @@ const page = () => {
 									className="rounded-md my-12"
 								/>
 								<Typewriter
-									text="read with a grain of salt"
+									text="unreliable narrator"
 									delay={100}
 								/>
 							</div>
