@@ -1,25 +1,25 @@
 .baseText {
-	@apply text-xl leading-relaxed;
+	@apply text-xl leading-relaxed my-4;
 }
 
 .indentedText {
-	@apply text-xl leading-relaxed;
+	@apply text-xl leading-relaxed my-4;
 	text-indent: 4rem;
 }
 
 .italicText {
-	@apply text-xl leading-relaxed italic;
+	@apply text-xl leading-relaxed italic my-4;
 }
 
 .indentedItalicText {
-	@apply text-xl leading-relaxed italic;
+	@apply text-xl leading-relaxed italic my-4;
 	text-indent: 4rem;
 }
 
 .rightAlignedText {
-	@apply text-xl leading-relaxed text-right;
+	@apply text-xl leading-relaxed text-right my-4;
 }
 
 .rightAlignedItalicText {
-	@apply text-xl leading-relaxed text-right italic;
+	@apply text-xl leading-relaxed text-right italic my-4;
 }
