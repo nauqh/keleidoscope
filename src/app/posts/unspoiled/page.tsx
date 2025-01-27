@@ -83,14 +83,14 @@ const Page = () => {
 				each other as the wind told them to. The cotton drifted,
 				unfolding the pristine blue that played a melodic acoustic
 				soundtrack by my ear. The maple leaves rustling beneath my
-				striped pyjamas pants joined the serene tweeting, occupying the
-				main performing slot. The slanting rays slipped through the
-				greens and yellows, brushing glossy strokes onto the existing
-				ethereal canvas. With her motherly nature, the beam patiently
-				approached and blew good morning kisses to the munchkins.
-				Munchkins, that's how she called the fragile periwinkle petals,
-				the olive greens covered with dew drops, the hundred-year-old
-				gnarled oak to the deep emerald grassy hill over there.
+				striped PJs joined the serene tweeting, occupying the main
+				performing slot. Slanting rays slipped through the greens and
+				yellows, painting the morning sky in soft strokes. With her
+				motherly nature, the beam patiently approached and blew good
+				morning kisses to the munchkins. Munchkins, that's how she
+				called the fragile periwinkle petals, the olive greens covered
+				with dew drops, the hundred-year-old gnarled oak to the deep
+				emerald grassy hill over there.
 			</p>
 			<p className={styles.indentedText}>
 				Crisp into the crispy. The gust of season tousled my thinning
@@ -167,12 +167,12 @@ const Page = () => {
 				take the slide. Three months of hitting the bull’s eye in one
 				bite had made the bed for me to sleep on my laurels. I slept on
 				the feathery pressure of vibrant ripe strawberries overflowing
-				from my front pockets. A cooling heart to touch. A cooling heart
-				to tongue. A tender soul was hidden behind a bumpy body. It was
-				like poking a jelly bead, which took minimal effort to crush
-				through the crunchy coat to attain the exquisite squeeze of
-				essence. A small but mighty essence that fondly softened a tough
-				day, soothed an unsettled mind, and healed a wounded heart.
+				from my front pockets. A cooling heart to touch. To tongue.
+				Beneath the bumpy skin lay a tender soul. It was like poking a
+				jelly bead, which took minimal effort to crush through the
+				crunchy coat to attain the exquisite squeeze of essence. A small
+				but mighty essence that fondly softened a tough day, soothed an
+				unsettled mind, and healed a wounded heart.
 			</p>
 			<p className={styles.indentedText}>
 				[An internal order received, waiting to be confirmed: one soft,

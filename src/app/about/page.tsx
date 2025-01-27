@@ -102,17 +102,15 @@ const page = () => {
 							</p>
 							<div className="flex flex-col sm:flex-row gap-4 my-8">
 								<button className="p-2 rounded-sm w-full text-lg font-light hover:bg-[#eae7e4] hover:text-white transition-colors border border-gray-800 hover:border-[#eae7e4]">
-									<Link href="/home">
-										Read my featured blog
-									</Link>
+									<Link href="/">Read my featured blog</Link>
 								</button>
 								<button className="p-2 rounded-sm w-full text-lg font-light hover:bg-[#eae7e4] hover:text-white transition-colors border border-gray-800 hover:border-[#eae7e4]">
-									<Link href="/home">
+									<Link href="/posts/collection">
 										Visit my collections
 									</Link>
 								</button>
 								<button className="p-2 rounded-sm w-full text-lg font-light hover:bg-[#eae7e4] hover:text-white transition-colors border border-gray-800 hover:border-[#eae7e4]">
-									<Link href="/home">Connect with me</Link>
+									<Link href="/">Connect with me</Link>
 								</button>
 							</div>
 							<p className="text-lg tracking-wider">
