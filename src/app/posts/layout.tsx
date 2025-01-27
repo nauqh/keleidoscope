@@ -35,7 +35,7 @@ export default function PostLayout({
 }: {
 	children: React.ReactNode;
 }) {
-	const [showButton, setShowButton] = useState(false); // Add state for button visibility
+	const [showButton, setShowButton] = useState(false);
 
 	useEffect(() => {
 		const handleScroll = () => {
