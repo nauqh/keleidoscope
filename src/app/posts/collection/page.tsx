@@ -26,7 +26,7 @@ const Page = () => {
 						<Fade cascade={true} triggerOnce={true}>
 							<Post
 								title="SWEET CAVITY"
-								img="/sweet-cavity.jpeg"
+								img="https://static01.nyt.com/images/2022/03/01/arts/28flora1/28flora1-videoSixteenByNineJumbo1600.jpg"
 								posted_at="2023-12-15T12:00:00Z"
 								description="Sweet Cavity can be enjoyed as an experimental sweet menu, my attempt to figure out the ultimate etiquette to devour the umami of companionship. The bonbon textures of language and structure serve to pierce, to dip, to scoop, to shovel in unique ways, challenging your poetic pancreas."
 								tags={["fiction", "collection"]}
