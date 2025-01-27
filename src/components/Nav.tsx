@@ -52,15 +52,32 @@ const Nav = () => {
 												{
 													title: "Sweet Cavity",
 													path: "sweet-cavity",
+													img: "/sweet-cavity.jpeg",
+													tags: [
+														"fiction",
+														"collection",
+													],
 												},
-												{ title: "Life", path: "life" },
+												{
+													title: "Life",
+													path: "life",
+													img: "/sweet-cavity.jpeg",
+													tags: [
+														"fiction",
+														"collection",
+													],
+												},
 											].map((item) => (
 												<li
 													key={item.path}
 													className="hover:bg-[#f5efe7] hover:text-[hsl(var(--secondary-color))] px-3 py-2 rounded-md"
 												>
 													<Link
-														href={`/posts/collection/${item.path}`}
+														href={`/posts/collection/${
+															item.path
+														}?tags=${item.tags.join()}&img=${
+															item.img
+														}`}
 													>
 														{item.title}
 													</Link>
@@ -130,15 +147,32 @@ const Nav = () => {
 												{
 													title: "Sweet Cavity",
 													path: "sweet-cavity",
+													img: "/sweet-cavity.jpeg",
+													tags: [
+														"fiction",
+														"collection",
+													],
 												},
-												{ title: "Life", path: "life" },
+												{
+													title: "Life",
+													path: "life",
+													img: "/sweet-cavity.jpeg",
+													tags: [
+														"fiction",
+														"collection",
+													],
+												},
 											].map((item) => (
 												<li
 													key={item.path}
 													className="hover:bg-[#f5efe7] hover:text-[hsl(var(--secondary-color))] px-3 py-2 rounded-md"
 												>
 													<Link
-														href={`/posts/collection/${item.path}`}
+														href={`/posts/collection/${
+															item.path
+														}?tags=${item.tags.join()}&img=${
+															item.img
+														}`}
 														onClick={() =>
 															setIsMenuOpen(false)
 														}
