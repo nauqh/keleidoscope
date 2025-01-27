@@ -113,11 +113,11 @@ const Dream = () => {
 			<div className="flex items-center justify-center">
 				<span className="text-2xl">#</span>
 			</div>
-			<p className={styles.indentedText}>
+			<p className={`${styles.indentedText} my-4`}>
 				I dream a lot. But I don’t chase – I hunt them. After all, as
 				people say, dreams don’t work unless you do.
 			</p>
-			<p className={styles.baseText}>
+			<p className={`${styles.baseText} my-4`}>
 				1. I have always enjoyed the language of clothing. My GCSE Art
 				teacher hated the coloured liners in my sketchbook. For my final
 				piece, I made my friends cover their hollow eyes. That's when I
@@ -125,7 +125,7 @@ const Dream = () => {
 				all the watercolours I'd been hoarding for years (most of them
 				borrowed from the art room anyway).
 			</p>
-			<p className={styles.baseText}>
+			<p className={`${styles.baseText} my-4`}>
 				I performed surgery on my painting: Dissected furious faces,
 				splashed them in paint, monochromatic rage. That piece made it
 				to the school exhibition, framed and all. 'In Disguise' – I
@@ -133,7 +133,7 @@ const Dream = () => {
 				life. The Cambridge people loved it and gave me an A. I've never
 				touched the drawing pad ever since.
 			</p>
-			<p className={styles.baseText}>
+			<p className={`${styles.baseText} my-4`}>
 				2. A level Drama happened because of my dad, a Ted Talk fanatic.
 				I did end up falling in love with stage directing and design.
 				Teachers were shocked by how fast I improved. I performed a girl
@@ -145,7 +145,7 @@ const Dream = () => {
 				teacher about. Just flashes of drugs and alcohol – she was a
 				painter.
 			</p>
-			<p className={styles.baseText}>
+			<p className={`${styles.baseText} my-4`}>
 				Some of my classmates were startled when they saw me on stage,
 				but they applauded. I've never really stepped foot on a stage
 				since. My dad said no. He switched from Ted Talks to Trump.
