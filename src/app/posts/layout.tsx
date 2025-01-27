@@ -67,7 +67,7 @@ export default function PostLayout({
 					onClick={() =>
 						window.scrollTo({ top: 0, behavior: "smooth" })
 					}
-					className="fixed bottom-8 right-8 bg-[hsl(var(--secondary-color))] text-white p-4 text-xl rounded-full shadow-lg hover:opacity-80 transition-opacity"
+					className="fixed bottom-10 right-10 bg-[hsl(var(--secondary-color))] text-white p-4 text-xl rounded-full shadow-lg hover:opacity-80 transition-opacity"
 					aria-label="Back to top"
 				>
 					<FaArrowUp size={20} />
