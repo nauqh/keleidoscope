@@ -66,7 +66,7 @@ const posts = [
 	},
 	{
 		title: "UNSHEDDING",
-		img: "https://emptyeasel.com/wp-content/uploads/2018/10/sea-spill.jpg",
+		img: "https://fccagallery.org/wp-content/uploads/2021/09/Unshed-Tears-Acrylic-on-Canvas-by-Tarver-Harris-36in-x-36in-2000-scaled.jpg",
 		posted_at: "2023-12-14T15:30:00Z",
 	},
 	{
