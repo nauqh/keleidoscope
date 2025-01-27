@@ -73,10 +73,10 @@ const Page = () => {
 							</div>
 							<div className="break-inside-avoid">
 								<Post
-									title="DANGER OF SMOKING IN BED"
-									img="https://s3-eu-west-1.amazonaws.com/asthebirdfliesblog.com/content/images/posts/pexels-lalesh-aldarwish-147634_x960.jpg?v=1"
+									title="SWEET CAVITY"
+									img="/sweet-cavity.jpeg"
 									posted_at="2023-12-15T12:00:00Z"
-									tags={["fiction", "short story"]}
+									tags={["fiction", "collection"]}
 								/>
 							</div>
 							<div className="break-inside-avoid">

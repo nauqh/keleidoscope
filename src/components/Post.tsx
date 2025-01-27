@@ -21,7 +21,9 @@ const Post = ({ title, img, posted_at, description, tags }: PostProps) => {
 	return (
 		<Card className="border-none h-fit transition-all duration-300 hover:-translate-y-2 group">
 			<Link
-				href={`/posts/${title.toLowerCase().replace(/\s+/g, "-")}${
+				href={`/posts/${
+					tags?.includes("collection") ? "collection/" : ""
+				}${title.toLowerCase().replace(/\s+/g, "-")}${
 					tags ? `?tags=${tags.join(",")}` : ""
 				}`}
 			>
