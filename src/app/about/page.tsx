@@ -90,21 +90,20 @@ const page = () => {
 								<Link href="/home">Connect with me</Link>
 							</button>
 						</div>
+					</div>
+					<div className="my-8 rounded-md">
+						<div className="flex flex-col sm:flex-row gap-8 justify-around">
+							<div>
+								<h1 className="text-center text-xl">
+									ON INSTAGRAM
+								</h1>
+								<h3 className="text-center text-xg p-2 hover:scale-105">
+									<Link href="https://www.instagram.com/kelramel_/">
+										@kelramel_
+									</Link>
+								</h3>
 
-						<div className="my-8 rounded-md">
-							<div className="flex">
-								<div>
-									<h1 className="text-center text-xl">
-										ON INSTAGRAM
-									</h1>
-									<h3 className="text-center text-xg p-2 hover:scale-105">
-										<Link href="https://www.instagram.com/kelramel_/">
-											@kelramel_
-										</Link>
-									</h3>
-
-									<InstagramEmbed url="https://www.instagram.com/kelramel_/" />
-								</div>
+								<InstagramEmbed url="https://www.instagram.com/kelramel_/" />
 							</div>
 						</div>
 					</div>
