@@ -168,7 +168,7 @@ const Nav = () => {
 							<Link href="https://www.instagram.com/kelramel_/">
 								<FaInstagram className="text-xl" />
 							</Link>
-							<Link href="#">
+							<Link href="/linkedin">
 								<FaLinkedin className="text-xl" />
 							</Link>
 							<Link href="mailto:hodominhquan.self@gmail.com">

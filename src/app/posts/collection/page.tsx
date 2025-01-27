@@ -15,15 +15,10 @@ const Page = () => {
 		<div>
 			<Fade cascade={true} triggerOnce={true}>
 				<div className="container mx-auto px-4 pt-5" id="slogan">
-					<div className="hidden md:block">
-						<Typewriter
-							text="a collection of thoughts and stories"
-							delay={100}
-						/>
-					</div>
-					<div className="md:hidden">
-						<Typewriter text="a voice in the void" delay={100} />
-					</div>
+					<Typewriter
+						text="collections of thoughts and ideas"
+						delay={100}
+					/>
 				</div>
 
 				<div className="container mx-auto px-4 py-5" id="posts">
