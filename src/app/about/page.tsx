@@ -32,7 +32,7 @@ const page = () => {
 									className="rounded-md my-12"
 								/>
 								<Typewriter
-									text="unreliable narrator"
+									text="read with a grain of salt"
 									delay={100}
 								/>
 							</div>
