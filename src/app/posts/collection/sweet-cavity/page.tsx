@@ -61,7 +61,7 @@ const posts = [
 	},
 	{
 		title: "A TOAST TO YOUR BEAUTY",
-		img: "https://s3-eu-west-1.amazonaws.com/asthebirdfliesblog.com/content/images/posts/beige-minimal-aesthetic-photo-collage_x960.jpg?v=1",
+		img: "https://i.pinimg.com/736x/8a/c9/51/8ac951937a0535ea2c77f07b1d8488a9.jpg",
 		posted_at: "2023-12-14T15:30:00Z",
 	},
 	{
@@ -86,7 +86,7 @@ const posts = [
 	},
 	{
 		title: "ANOTHER GUY",
-		img: "https://i.pinimg.com/originals/d3/59/bb/d359bb398d506405334886818afb647e.jpg",
+		img: "https://i.pinimg.com/736x/97/fd/8e/97fd8e51acbd0b88e3e2b3caa38f3435.jpg",
 		posted_at: "2023-12-14T15:30:00Z",
 	},
 ];
