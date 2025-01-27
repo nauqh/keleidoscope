@@ -2,6 +2,10 @@
 	@apply text-xl leading-relaxed my-4;
 }
 
+.indentedText {
+	@apply text-xl leading-relaxed my-4;
+	text-indent: 2rem;
+}
 .indentedTextList {
 	@apply text-xl leading-relaxed;
 	text-indent: 2rem;
