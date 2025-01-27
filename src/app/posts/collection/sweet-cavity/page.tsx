@@ -2,6 +2,8 @@
 import React, { Suspense } from "react";
 import styles from "../page.module.css";
 import ImageHeader from "@/components/ImageHeader";
+import { Fade } from "react-awesome-reveal";
+import Post from "@/components/Post";
 
 const Paragraph = ({ text }: { text: string }) => (
 	<p className={styles.baseText}>{text}</p>
@@ -41,6 +43,54 @@ const paragraphs = [
 	"I’d leave these words as my final mark: this work doesn’t exist for civility. It only exists tosatisfy the unspoken desire to destroy, to perhaps become armour that defends one’s innerchild from bloodless ties.",
 ];
 
+const posts = [
+	{
+		title: "HOUSE WARMING",
+		img: "https://i.etsystatic.com/22484508/r/il/7d9619/3610414449/il_fullxfull.3610414449_jrgw.jpg",
+		posted_at: "2023-12-14T15:30:00Z",
+	},
+	{
+		title: "SWEET COURSES",
+		img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-rLsS1of7IxBb562jA4P6Th4bZ303eUj-IA&s",
+		posted_at: "2023-12-14T15:30:00Z",
+	},
+	{
+		title: "CECILIA",
+		img: "/sweet-cavity.jpeg",
+		posted_at: "2023-12-15T12:00:00Z",
+	},
+	{
+		title: "A TOAST TO YOUR BEAUTY",
+		img: "https://s3-eu-west-1.amazonaws.com/asthebirdfliesblog.com/content/images/posts/beige-minimal-aesthetic-photo-collage_x960.jpg?v=1",
+		posted_at: "2023-12-14T15:30:00Z",
+	},
+	{
+		title: "UNSHEDDING",
+		img: "https://emptyeasel.com/wp-content/uploads/2018/10/sea-spill.jpg",
+		posted_at: "2023-12-14T15:30:00Z",
+	},
+	{
+		title: "ASYMMETRY",
+		img: "https://finearttutorials.com/wp-content/uploads/2022/05/cafe-terrace-place-du-forum-arles-18881.jpgHD_-807x1024.jpg",
+		posted_at: "2023-12-14T15:30:00Z",
+	},
+	{
+		title: "ADVICE ON RAISING MY FOX",
+		img: "https://i.etsystatic.com/16719255/r/il/354f4f/2680727372/il_fullxfull.2680727372_79g7.jpg",
+		posted_at: "2023-12-14T15:30:00Z",
+	},
+	{
+		title: "OFF SCREEN",
+		img: "https://offscreenparis.com/media/pages/home/1df967abec-1731442233/vue-d-installation-offscreen-stijn-cole-blue-print-irene-laub-gallery-offscreen-2024-photo-joseph-jabbour-1890x-q90.jpg",
+		posted_at: "2023-12-14T15:30:00Z",
+	},
+	{
+		title: "ANOTHER GUY",
+		img: "https://i.pinimg.com/originals/d3/59/bb/d359bb398d506405334886818afb647e.jpg",
+		posted_at: "2023-12-14T15:30:00Z",
+	},
+];
+
 function SweetCavity() {
 	return (
 		<>
@@ -63,6 +113,26 @@ function SweetCavity() {
 			{paragraphs.map((text, index) => (
 				<Paragraph key={index} text={text} />
 			))}
+
+			<div className="container mx-auto px-4 py-5" id="posts">
+				<div className="columns-1 md:columns-3 gap-6 space-y-6">
+					<Fade cascade={true} triggerOnce={true}>
+						{posts.map((post) => (
+							<Post
+								key={post.title
+									.toLowerCase()
+									.replace(/\s+/g, "-")}
+								title={post.title}
+								img={post.img}
+								posted_at={post.posted_at}
+								url={`/posts/collection/sweet-cavity/${post.title
+									.toLowerCase()
+									.replace(/\s+/g, "-")}?img=${post.img}`}
+							/>
+						))}
+					</Fade>
+				</div>
+			</div>
 		</>
 	);
 }
