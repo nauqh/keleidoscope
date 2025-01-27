@@ -38,7 +38,7 @@ const page = () => {
 								/>
 							</div>
 							<div className="flex-1 flex justify-end">
-								<div className="p-14 bg-[#eae7e4]">
+								<div className="p-14 bg-[#b39d90]">
 									<Image
 										src="/portrait.jpg"
 										alt="Authors photo"
