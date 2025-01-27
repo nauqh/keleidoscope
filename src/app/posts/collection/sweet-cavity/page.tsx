@@ -81,7 +81,7 @@ const posts = [
 	},
 	{
 		title: "OFF SCREEN",
-		img: "https://offscreenparis.com/media/pages/home/1df967abec-1731442233/vue-d-installation-offscreen-stijn-cole-blue-print-irene-laub-gallery-offscreen-2024-photo-joseph-jabbour-1890x-q90.jpg",
+		img: "https://media.newyorker.com/photos/64122aeb0bdfe815c7db3a5f/4:3/w_2560,h_1920,c_limit/ra1145.jpg",
 		posted_at: "2023-12-14T15:30:00Z",
 	},
 	{
