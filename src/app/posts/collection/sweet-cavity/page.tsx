@@ -60,7 +60,7 @@ function SweetCavity() {
 				</a>
 			</p>
 
-			<h2 className="text-lg font-semibold leading-relaxed my-4">
+			<h2 className="text-xl font-semibold leading-relaxed my-4">
 				Poetics Manifesto
 			</h2>
 			{paragraphs.map((text, index) => (
