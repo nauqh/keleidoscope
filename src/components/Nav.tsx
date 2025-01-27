@@ -52,7 +52,7 @@ const Nav = () => {
 												{
 													title: "Sweet Cavity",
 													path: "sweet-cavity",
-													img: "/sweet-cavity.jpeg",
+													img: "https://static01.nyt.com/images/2022/03/01/arts/28flora1/28flora1-videoSixteenByNineJumbo1600.jpg",
 													tags: [
 														"fiction",
 														"collection",
@@ -147,7 +147,7 @@ const Nav = () => {
 												{
 													title: "Sweet Cavity",
 													path: "sweet-cavity",
-													img: "/sweet-cavity.jpeg",
+													img: "https://static01.nyt.com/images/2022/03/01/arts/28flora1/28flora1-videoSixteenByNineJumbo1600.jpg",
 													tags: [
 														"fiction",
 														"collection",
