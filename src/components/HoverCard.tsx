@@ -28,7 +28,7 @@ const HoverCard = ({ title, img, children }: HoverCardProps) => {
 			/>
 
 			<Card
-				className="border-none transition-transform duration-300 cursor-pointer mx-auto my-4 hover:scale-105 group w-[400px]"
+				className="border-none transition-transform duration-300 cursor-pointer mx-auto my-4 hover:scale-105 group max-w-[400px] sm:max-w-[300px]"
 				onClick={handleToggle}
 				role="button"
 				aria-expanded={isExpanded}
