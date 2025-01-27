@@ -19,7 +19,7 @@ interface PostProps {
 
 const Post = ({ title, img, posted_at, description, tags }: PostProps) => {
 	return (
-		<Card className="border-none h-fit transition-all duration-300 hover:-translate-y-2 group">
+		<Card className="border-none h-fit transition-all duration-300 hover:-translate-y-2 group break-inside-avoid">
 			<Link
 				href={`/posts/${
 					tags?.includes("collection") ? "collection/" : ""
