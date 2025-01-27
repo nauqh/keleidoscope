@@ -52,8 +52,8 @@ const HoverCard = ({ title, img, children }: HoverCardProps) => {
 			</Card>
 
 			<Card
-				className={`fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 max-h-[80vh] 
-                    overflow-y-auto w-[90vw] border-none cursor-pointer transition-all duration-300
+				className={`fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 max-h-[75vh] 
+                    overflow-y-auto w-[95vw] border-none cursor-pointer transition-all duration-300
                     ${
 						isExpanded
 							? "opacity-100 scale-100"
