@@ -25,7 +25,7 @@ const Typewriter = ({ text, delay }: TypewriterProps) => {
 
 	return (
 		<h2
-			className="text-center text-5xl min-h-[60px] my-4"
+			className="text-center text-4xl md:text-5xl min-h-[60px] my-4"
 			style={{ fontFamily: "'Reenie Beanie', cursive" }}
 		>
 			{currentText}
