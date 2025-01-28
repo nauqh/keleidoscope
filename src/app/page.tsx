@@ -79,7 +79,7 @@ const Page = () => {
 							/>
 							<Post
 								title="NAOMI"
-								img="https://rareplayingcards.com/cdn/shop/files/Frazetta_Art_Museum_Playing_Cards_4100x.jpg?v=1729053104"
+								img="https://i.pinimg.com/736x/4a/be/59/4abe5946d2209fd260363b751ad4e93c.jpg"
 								posted_at="2023-12-14T15:30:00Z"
 								description="Some of my classmates were startled when they saw me on stage, but they applauded. I've never really stepped foot on a stage since. My dad said no. He switched from Ted Talks to Trump."
 								tags={["fiction", "short story"]}

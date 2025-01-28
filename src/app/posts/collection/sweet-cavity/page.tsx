@@ -4,6 +4,7 @@ import styles from "../page.module.css";
 import ImageHeader from "@/components/ImageHeader";
 import { Fade } from "react-awesome-reveal";
 import Post from "@/components/Post";
+import HoverCard from "@/components/HoverCard";
 
 const Paragraph = ({ text }: { text: string }) => (
 	<p className={styles.baseText}>{text}</p>
@@ -45,13 +46,13 @@ const paragraphs = [
 
 const posts = [
 	{
-		title: "HOUSE WARMING",
+		title: "HOUSEWARMING",
 		img: "https://i.etsystatic.com/22484508/r/il/7d9619/3610414449/il_fullxfull.3610414449_jrgw.jpg",
 		posted_at: "2023-12-14T15:30:00Z",
 	},
 	{
 		title: "SWEET COURSES",
-		img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-rLsS1of7IxBb562jA4P6Th4bZ303eUj-IA&s",
+		img: "https://i.pinimg.com/736x/5c/f1/c8/5cf1c8b8e1511c55212772762976a472.jpg",
 		posted_at: "2023-12-14T15:30:00Z",
 	},
 	{

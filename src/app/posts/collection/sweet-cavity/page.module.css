@@ -1,0 +1,7 @@
+.baseText {
+	@apply text-xl leading-relaxed my-4;
+}
+
+.baseTextCenter {
+	@apply text-xl leading-relaxed my-4 text-center;
+}
