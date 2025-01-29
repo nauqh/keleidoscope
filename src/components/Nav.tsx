@@ -207,7 +207,7 @@ const Nav = () => {
 							))}
 						</ul>
 						{/* Social links */}
-						<div className="flex gap-8 mt-8">
+						<div className="flex gap-4 mt-8">
 							<Link
 								href="https://www.instagram.com/kelramel_/"
 								className="text-2xl hover:text-[hsl(var(--secondary-color))]"
