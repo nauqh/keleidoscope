@@ -10,6 +10,15 @@ import postsData from "@/data/posts.json";
 import { Fade } from "react-awesome-reveal";
 import { FaInstagram, FaLinkedin, FaRegEnvelope } from "react-icons/fa";
 
+import dynamic from "next/dynamic";
+
+const InstagramEmbed = dynamic(
+	() => import("react-social-media-embed").then((mod) => mod.InstagramEmbed),
+	{
+		ssr: false,
+	}
+);
+
 const Page = () => {
 	useEffect(() => {
 		mailgo();
@@ -19,7 +28,7 @@ const Page = () => {
 		<div>
 			<Fade cascade={true} triggerOnce={true}>
 				<ul
-					className="hidden md:flex fixed left-8 top-1/2 flex-col gap-2 z-10"
+					className="hidden  fixed left-8 top-1/2 flex-col gap-2 z-10"
 					id="social"
 				>
 					<li>
@@ -37,6 +46,35 @@ const Page = () => {
 							<FaRegEnvelope className="text-2xl transition-all duration-300 hover:scale-110" />
 						</Link>
 					</li>
+				</ul>
+				<ul
+					className="hidden lg:flex fixed -left-10 top-1/2 flex-row gap-8 z-10 uppercase text-sm"
+					style={{ transform: "rotate(-90deg)" }}
+				>
+					{[
+						{
+							text: "email me",
+							href: "mailto:hodominhquan.self@gmail.com",
+							hasEmbed: false,
+						},
+						{ text: "feature", href: "/linkedin", hasEmbed: true },
+						{
+							text: "social",
+							href: "https://www.instagram.com/kelramel_/",
+							hasEmbed: true,
+						},
+					].map((item, index) => (
+						<li key={index} className="relative group">
+							<Link href={item.href}>{item.text}</Link>
+							{item.hasEmbed ? (
+								<div className="hidden group-hover:block absolute -right-20 transform rotate-90 w-[320px] h-[420px] z-20">
+									<InstagramEmbed url="https://www.instagram.com/kelramel_/" />
+								</div>
+							) : (
+								<div className="hidden group-hover:block absolute -right-20 transform rotate-90 w-[320px] h-[420px] z-20 bg-secondary" />
+							)}
+						</li>
+					))}
 				</ul>
 
 				<div className="container mx-auto px-4 pt-5" id="slogan">
