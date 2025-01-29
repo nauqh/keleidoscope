@@ -59,11 +59,12 @@ const Nav = () => {
 													],
 												},
 												{
-													title: "Life",
-													path: "life",
-													img: "/sweet-cavity.jpeg",
+													title: "Dream Journal",
+													path: "dream-journal",
+													img: "https://images8.alphacoders.com/119/1197975.jpg",
 													tags: [
 														"fiction",
+														"short story",
 														"collection",
 													],
 												},
@@ -154,11 +155,12 @@ const Nav = () => {
 													],
 												},
 												{
-													title: "Life",
-													path: "life",
-													img: "/sweet-cavity.jpeg",
+													title: "Dream Journal",
+													path: "dream-journal",
+													img: "https://images8.alphacoders.com/119/1197975.jpg",
 													tags: [
 														"fiction",
+														"short story",
 														"collection",
 													],
 												},

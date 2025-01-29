@@ -135,6 +135,17 @@ const page = () => {
 								feel introspective but probably aren’t, stick
 								around.
 							</p>
+							<p className="text-lg tracking-wider">
+								Maybe one day, when I hit my 40s, I'll think
+								about publishing in a more traditional sense.
+								Until then, this space is mine to experiment and
+								overshare.
+							</p>
+							<p className="text-lg tracking-wider">
+								So, happy reading! If you leave here feeling a
+								little more—or less—frustrated, I consider that
+								a win.
+							</p>
 						</div>
 					</div>
 					<div className="my-8 p-4">
@@ -152,17 +163,6 @@ const page = () => {
 								<InstagramEmbed url="https://www.instagram.com/kelramel_/" />
 							</div>
 							<div className="md:w-[50%] space-y-4">
-								<p className="text-lg tracking-wider">
-									Maybe one day, when I hit my 40s, I'll think
-									about publishing in a more traditional
-									sense. Until then, this space is mine to
-									experiment and overshare.
-								</p>
-								<p className="text-lg tracking-wider">
-									So, happy reading! If you leave here feeling
-									a little more—or less—frustrated, I consider
-									that a win.
-								</p>
 								<p className="text-lg tracking-wider italic ">
 									Oh, and before you rage-quit over my
 									writing—the website? Not my fault. It
