@@ -25,6 +25,7 @@ const Nav = () => {
 					</h1>
 
 					<div className="flex items-center gap-4">
+						{/* Search button  */}
 						<button
 							className="p-2 z-50 relative"
 							onClick={() => setIsSearchOpen(!isSearchOpen)}
@@ -38,6 +39,7 @@ const Nav = () => {
 							</div>
 						</button>
 
+						{/* Menu button */}
 						<button
 							className="p-2 z-50 relative"
 							onClick={() => setIsMenuOpen(!isMenuOpen)}

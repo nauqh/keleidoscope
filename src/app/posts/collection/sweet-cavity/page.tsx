@@ -4,7 +4,6 @@ import styles from "../page.module.css";
 import ImageHeader from "@/components/ImageHeader";
 import { Fade } from "react-awesome-reveal";
 import Post from "@/components/Post";
-import HoverCard from "@/components/HoverCard";
 
 const Paragraph = ({ text }: { text: string }) => (
 	<p className={styles.baseText}>{text}</p>
