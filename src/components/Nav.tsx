@@ -18,9 +18,9 @@ const Nav = () => {
 		<nav className="sticky top-0 bg-white z-50 shadow-md">
 			<div className="container mx-auto p-1">
 				<div className="my-2 px-2 flex items-center justify-between">
-					<h1 className="text-xl transition-transform duration-300 hover:scale-110">
+					<h1 className="absolute left-1/2 -translate-x-1/2 text-xl hover:opacity-60">
 						<Link
-							className="font-semibold"
+							className="tracking-[0.2rem] font-light uppercase"
 							href="/"
 							onClick={() => {
 								setIsMenuOpen(false);
@@ -31,7 +31,7 @@ const Nav = () => {
 						</Link>
 					</h1>
 
-					<div className="flex items-center gap-4">
+					<div className="flex items-center gap-4 ml-auto">
 						{/* Search button  */}
 						<button
 							className="p-2 z-50 relative"
