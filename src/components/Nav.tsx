@@ -32,7 +32,7 @@ const Nav = () => {
 						>
 							<div className="relative w-5 h-5">
 								<FaSearch
-									className={`w-5 h-5 text-gray-800 absolute top-0 left-0 transition-all duration-300 ease-in-out ${
+									className={`w-5 h-5 text-gray-600 absolute top-0 left-0 transition-all duration-300 ease-in-out ${
 										isSearchOpen ? "rotate-90" : "rotate-0"
 									}`}
 								/>
@@ -46,14 +46,14 @@ const Nav = () => {
 						>
 							<div className="relative w-6 h-6">
 								<FaTimes
-									className={`w-6 h-6 text-gray-800 absolute top-0 left-0 transition-all duration-300 ease-in-out ${
+									className={`w-6 h-6 text-gray-600 absolute top-0 left-0 transition-all duration-300 ease-in-out ${
 										isMenuOpen
 											? "opacity-100 rotate-0"
 											: "opacity-0 rotate-90"
 									}`}
 								/>
 								<FaBars
-									className={`w-6 h-6 text-gray-800 absolute top-0 left-0 transition-all duration-300 ease-in-out ${
+									className={`w-6 h-6 text-gray-600 absolute top-0 left-0 transition-all duration-300 ease-in-out ${
 										isMenuOpen
 											? "opacity-0 -rotate-90"
 											: "opacity-100 rotate-0"
