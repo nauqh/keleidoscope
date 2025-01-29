@@ -85,7 +85,7 @@ const Nav = () => {
 								<button
 									className="absolute right-0 top-0 h-full px-6 rounded-r-lg bg-transparent hover:bg-[hsl(var(--secondary-color))] text-[hsl(var(--secondary-color))] hover:text-white transition-all"
 									onClick={() => {
-										// Add search logic here
+										// TODO: Implement search
 									}}
 								>
 									Search
