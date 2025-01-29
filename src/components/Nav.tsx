@@ -78,11 +78,18 @@ const Nav = () => {
 							<div className="relative">
 								<input
 									type="text"
-									placeholder="Search..."
-									className="w-full px-6 py-4 text-xl rounded-lg border border-gray-300 focus:outline-none focus:border-[hsl(var(--secondary-color))] bg-white"
+									placeholder="Type something..."
+									className="w-full px-6 py-4 rounded-lg border border-gray-300 focus:outline-none focus:border-[hsl(var(--secondary-color))] bg-white"
 									autoFocus={isSearchOpen}
 								/>
-								<FaSearch className="absolute right-6 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+								<button
+									className="absolute right-0 top-0 h-full px-6 rounded-r-lg bg-transparent hover:bg-[hsl(var(--secondary-color))] text-[hsl(var(--secondary-color))] hover:text-white transition-all"
+									onClick={() => {
+										// Add search logic here
+									}}
+								>
+									Search
+								</button>
 							</div>
 							<div className="mt-8">
 								<h3 className="text-lg font-medium mb-4">
