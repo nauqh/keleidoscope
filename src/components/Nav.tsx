@@ -19,7 +19,14 @@ const Nav = () => {
 			<div className="container mx-auto p-1">
 				<div className="my-2 px-2 flex items-center justify-between">
 					<h1 className="text-xl transition-transform duration-300 hover:scale-110">
-						<Link className="font-semibold" href="/">
+						<Link
+							className="font-semibold"
+							href="/"
+							onClick={() => {
+								setIsMenuOpen(false);
+								setIsSearchOpen(false);
+							}}
+						>
 							Keleidoscope
 						</Link>
 					</h1>
