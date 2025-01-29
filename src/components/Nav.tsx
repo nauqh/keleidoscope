@@ -79,7 +79,7 @@ const Nav = () => {
 								<input
 									type="text"
 									placeholder="Type something..."
-									className="w-full px-6 py-4 rounded-lg border border-gray-300 focus:outline-none focus:border-[hsl(var(--secondary-color))] bg-white"
+									className="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:border-[hsl(var(--secondary-color))] bg-white"
 									autoFocus={isSearchOpen}
 								/>
 								<button
