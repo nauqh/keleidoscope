@@ -102,19 +102,7 @@ const page = () => {
 								found solace in words after years of unintended
 								practice.
 							</p>
-							<div className="flex flex-col sm:flex-row gap-4 my-8">
-								<button className="p-2 rounded-sm w-full text-lg font-light hover:bg-[#b39d90] hover:text-white transition-colors border border-gray-800 hover:border-[#eae7e4]">
-									<Link href="/">Read my featured blog</Link>
-								</button>
-								<button className="p-2 rounded-sm w-full text-lg font-light hover:bg-[#b39d90] hover:text-white transition-colors border border-gray-800 hover:border-[#eae7e4]">
-									<Link href="/posts/collection">
-										Visit my collections
-									</Link>
-								</button>
-								<button className="p-2 rounded-sm w-full text-lg font-light hover:bg-[#b39d90] hover:text-white transition-colors border border-gray-800 hover:border-[#eae7e4]">
-									<Link href="/">Connect with me</Link>
-								</button>
-							</div>
+
 							<p className="text-lg tracking-wider">
 								Fast forward to 2024—I graduated from the
 								University of Melbourne with a Bachelor of Arts
@@ -173,6 +161,19 @@ const page = () => {
 									here we are. Enjoy the website! It’s
 									probably the most organised thing about me.
 								</p>
+								<div className="flex flex-col sm:flex-row gap-4 my-8">
+									<button className="p-2 rounded-sm w-full text-lg font-light hover:bg-[#b39d90] hover:text-white transition-colors border border-gray-800 hover:border-[#eae7e4]">
+										<Link href="/">Read my features</Link>
+									</button>
+									<button className="p-2 rounded-sm w-full text-lg font-light hover:bg-[#b39d90] hover:text-white transition-colors border border-gray-800 hover:border-[#eae7e4]">
+										<Link href="/posts/collection">
+											Visit my collections
+										</Link>
+									</button>
+									<button className="p-2 rounded-sm w-full text-lg font-light hover:bg-[#b39d90] hover:text-white transition-colors border border-gray-800 hover:border-[#eae7e4]">
+										<Link href="/">Connect with me</Link>
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
