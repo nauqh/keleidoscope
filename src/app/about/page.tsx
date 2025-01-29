@@ -25,7 +25,7 @@ const page = () => {
 						/>
 					</div>
 					<div className="container mx-auto w-[80%]">
-						<div className="flex flex-col sm:flex-row my-8 px-8">
+						<div className="flex flex-col sm:flex-row my-8 md:px-8">
 							<div className="w-full">
 								<h1 className="text-2xl tracking-wider uppercase">
 									About me.
