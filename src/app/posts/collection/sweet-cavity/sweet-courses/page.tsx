@@ -39,10 +39,6 @@ const content = {
 				"endless laughters, tongues dripping honey",
 				"show me your playroom, where we dance in bliss",
 				"snuggling in bed, whistling away our weary worries.",
-				"Endless hums of sharing heartbreaks over molten cakes",
-				"resting by the window, where sunflowers gleam",
-				"tenderness tingles tongue, candy cane craving awakes",
-				"save me, please, from the caramel threads I once dreamt.",
 			],
 			[
 				"Endless hums of sharing heartbreaks over molten cakes",
