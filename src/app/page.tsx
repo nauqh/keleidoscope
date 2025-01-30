@@ -153,7 +153,7 @@ const Page = () => {
 							Send me your thoughts
 						</h2>
 						<p className="mb-6 text-gray-600">
-							Share your thoughts, stories, or feedback with me.
+							Roast me (or hype me up) - anonymously
 						</p>
 						<div className="flex flex-col gap-3">
 							<textarea
@@ -165,6 +165,15 @@ const Page = () => {
 							></textarea>
 							<button
 								onClick={() => {
+									if (!message.trim()) {
+										toast({
+											description:
+												"Hey! Be sneaky, not empty!",
+											variant: "destructive",
+											duration: 3000,
+										});
+										return;
+									}
 									handleSend();
 									toast({
 										description:
