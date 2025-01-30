@@ -8,6 +8,9 @@ import mailgo from "mailgo";
 import postsData from "@/data/posts.json";
 import Image from "next/image";
 
+import { Toaster } from "@/components/ui/toaster";
+import { useToast } from "@/hooks/use-toast";
+
 import { Fade } from "react-awesome-reveal";
 import dynamic from "next/dynamic";
 
@@ -57,6 +60,7 @@ const InstagramEmbed = dynamic(
 
 const Page = () => {
 	const [message, setMessage] = useState("");
+	const { toast } = useToast();
 
 	useEffect(() => {
 		mailgo();
@@ -160,7 +164,14 @@ const Page = () => {
 								className="px-3 py-2 border border-gray-300 rounded-sm focus:outline-none focus:border-[#b39d90] resize-none"
 							></textarea>
 							<button
-								onClick={handleSend}
+								onClick={() => {
+									handleSend();
+									toast({
+										description:
+											"Your message has been sent.",
+										duration: 3000,
+									});
+								}}
 								className="px-6 py-2 bg-[#b39d90] text-white rounded-sm hover:bg-[#a08977] transition-colors"
 							>
 								Send
@@ -169,6 +180,7 @@ const Page = () => {
 					</div>
 				</div>
 			</Fade>
+			<Toaster />
 			<Footer />
 		</div>
 	);
