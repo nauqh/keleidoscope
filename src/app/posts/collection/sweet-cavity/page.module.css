@@ -1,6 +1,9 @@
 .baseText {
 	@apply text-xl leading-relaxed my-4;
 }
+.baseTextMobile {
+	@apply text-sm my-2;
+}
 
 .baseTextCenter {
 	@apply text-xl leading-relaxed my-4 text-center;

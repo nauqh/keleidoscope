@@ -4,7 +4,10 @@ import styles from "../page.module.css";
 import ImageHeader from "@/components/ImageHeader";
 
 const Paragraph = ({ text }: { text: string }) => (
-	<p className={styles.baseText}>{text}</p>
+	<>
+		<p className={`md:hidden ${styles.baseTextMobile}`}>{text}</p>
+		<p className={`hidden md:block ${styles.baseText}`}>{text}</p>
+	</>
 );
 
 const Section = ({
