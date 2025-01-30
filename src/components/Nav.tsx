@@ -18,7 +18,7 @@ const Nav = () => {
 		<nav className="sticky top-0 bg-white z-50 shadow-md">
 			<div className="container mx-auto p-1">
 				<div className="my-2 px-2 flex items-center justify-between">
-					<h1 className="absolute left-1/2 -translate-x-1/2 md:static md:left-0 md:translate-x-0 text-xl hover:opacity-60">
+					<h1 className="text-xl hover:opacity-60">
 						<Link
 							className="tracking-[0.2rem] font-light uppercase"
 							href="/"
