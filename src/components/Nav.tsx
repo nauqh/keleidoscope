@@ -90,7 +90,7 @@ const Nav = () => {
 									autoFocus={isSearchOpen}
 								/>
 								<button
-									className="absolute right-0 top-0 h-full px-6 rounded-r-lg bg-transparent hover:bg-[hsl(var(--secondary-color))] text-[hsl(var(--secondary-color))] hover:text-white transition-all"
+									className="absolute right-0 top-0 h-full px-6 rounded-r-lg bg-transparent hover:bg-[#a08977] text-[#a08977] hover:text-white transition-all"
 									onClick={() => {
 										// TODO: Implement search
 									}}
@@ -111,7 +111,7 @@ const Nav = () => {
 									].map((tag) => (
 										<button
 											key={tag}
-											className="px-4 py-2 rounded-full bg-white hover:bg-[hsl(var(--secondary-color))] hover:text-white transition-colors"
+											className="px-4 py-2 rounded-full bg-white hover:bg-[#a08977] hover:text-white transition-colors"
 										>
 											{tag}
 										</button>
