@@ -105,6 +105,27 @@ const Page = () => {
 						</Fade>
 					</div>
 				</div>
+
+				<div className="container my-4 mx-auto px-4 py-8 bg-[#faf6f1] rounded-sm">
+					<div className="max-w-md mx-auto text-center">
+						<h2 className="text-xl mb-4 uppercase">
+							Subscribe to Newsletter
+						</h2>
+						<p className="mb-6 text-gray-600">
+							Stay updated with my latest thoughts and stories.
+						</p>
+						<div className="flex gap-2">
+							<input
+								type="email"
+								placeholder="Enter your email"
+								className="flex-1 px-3 py-2 border border-gray-300 rounded-sm focus:outline-none focus:border-[#b39d90]"
+							/>
+							<button className="px-6 py-2 bg-[#b39d90] text-white rounded-sm hover:bg-[#a08977] transition-colors">
+								Subscribe
+							</button>
+						</div>
+					</div>
+				</div>
 			</Fade>
 			<Footer />
 		</div>
