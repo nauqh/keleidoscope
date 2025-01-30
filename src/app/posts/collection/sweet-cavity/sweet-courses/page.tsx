@@ -5,8 +5,8 @@ import ImageHeader from "@/components/ImageHeader";
 
 const Paragraph = ({ text }: { text: string }) => (
 	<>
-		<p className={`md:hidden ${styles.baseTextMobile}`}>{text}</p>
-		<p className={`hidden md:block ${styles.baseText}`}>{text}</p>
+		<p className={`sm:hidden ${styles.baseTextMobile}`}>{text}</p>
+		<p className={`hidden sm:block ${styles.baseText}`}>{text}</p>
 	</>
 );
 
