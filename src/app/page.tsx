@@ -133,16 +133,18 @@ const Page = () => {
 				<div className="container mx-auto px-4 py-5" id="posts">
 					<div className="columns-1 md:columns-2 gap-6 space-y-6">
 						<Fade cascade={true} triggerOnce={true}>
-							{postsData.posts.map((post, index) => (
-								<Post
-									key={index}
-									title={post.title}
-									img={post.img}
-									posted_at={post.posted_at}
-									description={post.description}
-									tags={post.tags}
-								/>
-							))}
+							{postsData.posts.map((post, index) =>
+								post.posted_at ? (
+									<Post
+										key={index}
+										title={post.title}
+										img={post.img}
+										posted_at={post.posted_at}
+										description={post.description}
+										tags={post.tags}
+									/>
+								) : null
+							)}
 						</Fade>
 					</div>
 				</div>

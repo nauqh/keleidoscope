@@ -9,7 +9,8 @@
                 "fiction",
                 "short story",
                 "collection"
-            ]
+            ],
+            "url": "/posts/collection/dream-journal?tags=fiction,short%20story,collection&img=https://images8.alphacoders.com/119/1197975.jpg"
         },
         {
             "title": "UNSPOILED",
@@ -19,7 +20,8 @@
             "tags": [
                 "short story",
                 "nature"
-            ]
+            ],
+            "url": "/posts/unspoiled?tags=short%20story,nature&img=https://openaccess-cdn.clevelandart.org/1971.47/1971.47_print.jpg"
         },
         {
             "title": "SWEET CAVITY",
@@ -29,7 +31,8 @@
             "tags": [
                 "poetry",
                 "collection"
-            ]
+            ],
+            "url": "/posts/collection/sweet-cavity?tags=poetry,collection&img=https://static01.nyt.com/images/2022/03/01/arts/28flora1/28flora1-videoSixteenByNineJumbo1600.jpg"
         },
         {
             "title": "NAOMI",
@@ -39,7 +42,19 @@
             "tags": [
                 "fiction",
                 "short story"
-            ]
+            ],
+            "url": "/posts/naomi?tags=fiction%2Cshort+story&img=https%3A%2F%2Fi.pinimg.com%2F736x%2F4a%2Fbe%2F59%2F4abe5946d2209fd260363b751ad4e93c.jpg"
+        },
+        {
+            "title": "ABOUT",
+            "img": "",
+            "tags": [
+                "about",
+                "me",
+                "kel",
+                "keiledoscope"
+            ],
+            "url": "/about"
         }
     ]
 }

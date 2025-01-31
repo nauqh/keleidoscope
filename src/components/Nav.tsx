@@ -9,10 +9,43 @@ import {
 	FaLinkedin,
 	FaRegEnvelope,
 } from "react-icons/fa";
+import postsData from "@/data/posts.json";
+import { Toaster } from "@/components/ui/toaster";
+import { useToast } from "@/hooks/use-toast";
 
 const Nav = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isSearchOpen, setIsSearchOpen] = useState(false);
+	const [searchQuery, setSearchQuery] = useState("");
+
+	const availablePosts = postsData.posts;
+	const { toast } = useToast();
+
+	const handleSearch = () => {
+		const query = searchQuery.toLowerCase();
+		const result = availablePosts.find(
+			(post) =>
+				post.tags.some((keyword) => keyword.includes(query)) ||
+				post.title.toLowerCase().includes(query)
+		);
+
+		if (result) {
+			setSearchQuery("");
+			window.location.href = result.url;
+		} else {
+			toast({
+				description:
+					"Oops! Your search is as empty as my coffee cup on Monday morning. Try again?",
+				variant: "destructive",
+				duration: 3000,
+			});
+			setSearchQuery("");
+		}
+	};
+
+	const handleTagClick = (tag: string) => {
+		setSearchQuery(tag);
+	};
 
 	return (
 		<nav className="sticky top-0 bg-white z-50 shadow-md">
@@ -88,12 +121,14 @@ const Nav = () => {
 									placeholder="Type something..."
 									className="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:border-[hsl(var(--secondary-color))] bg-white"
 									autoFocus={isSearchOpen}
+									value={searchQuery}
+									onChange={(e) =>
+										setSearchQuery(e.target.value)
+									}
 								/>
 								<button
 									className="absolute right-0 top-0 h-full px-6 rounded-r-lg bg-transparent hover:bg-[#a08977] text-[#a08977] hover:text-white transition-all"
-									onClick={() => {
-										// TODO: Implement search
-									}}
+									onClick={handleSearch}
 								>
 									Search
 								</button>
@@ -112,6 +147,7 @@ const Nav = () => {
 										<button
 											key={tag}
 											className="px-4 py-2 rounded-full bg-white hover:bg-[#a08977] hover:text-white transition-colors"
+											onClick={() => handleTagClick(tag)}
 										>
 											{tag}
 										</button>
@@ -237,6 +273,7 @@ const Nav = () => {
 					</div>
 				</div>
 			</div>
+			<Toaster />
 		</nav>
 	);
 };
