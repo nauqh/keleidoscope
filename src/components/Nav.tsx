@@ -47,7 +47,7 @@ const Nav = () => {
 	};
 
 	return (
-		<nav className="sticky top-0 bg-white z-50 shadow-md">
+		<nav className="sticky top-0 bg-white z-50 shadow-sm">
 			<div className="container mx-auto p-1">
 				<div className="my-2 px-2 flex items-center justify-between">
 					<h1 className="text-xl hover:opacity-60">

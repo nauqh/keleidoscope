@@ -82,52 +82,51 @@ const Page = () => {
 	return (
 		<div>
 			<Fade cascade={true} triggerOnce={true}>
-				<ul
-					className="hidden lg:flex fixed top-1/2 flex-row gap-8 z-10 text-sm"
-					style={{ transform: "rotate(-90deg)" }}
-				>
-					{[
-						{
-							text: "collection",
-							href: "mailto:hodominhquan.self@gmail.com",
-							hasEmbed: false,
-						},
-						{
-							text: "social",
-							href: "https://www.instagram.com/kelramel_/",
-							hasEmbed: false,
-						},
-					].map((item, index) => (
-						<li key={index} className="relative group">
-							<Link
-								className="hover:text-[#b39d90] uppercase"
-								href={item.href}
-							>
-								{item.text}
-							</Link>
-
-							<div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute -right-40 transform rotate-90 w-[400px] h-[420px] rounded-sm -z-10 transition-all duration-300 ease-in-out">
-								<div className="absolute -left-[70px] top-[180px] w-20 h-10" />
-								{item.text === "collection" ? (
-									<div className="bg-[#faf6f1] p-8 h-full rounded-sm shadow-md overflow-y-auto">
-										<h2 className="text-2xl uppercase">
-											{item.text}
-										</h2>
-										<hr className="my-2 border-gray-600" />
-										<CollectionHover />
-									</div>
-								) : (
-									<InstagramEmbed
-										url="https://www.instagram.com/kelramel_/"
-										width={328}
-									/>
-								)}
-							</div>
-						</li>
-					))}
-				</ul>
-
 				<div className="container mx-auto my-12">
+					<ul
+						className="hidden lg:flex absolute left-12 top-1/2 flex-row gap-8 z-10 text-sm"
+						style={{ transform: "rotate(-90deg)" }}
+					>
+						{[
+							{
+								text: "collection",
+								href: "mailto:hodominhquan.self@gmail.com",
+								hasEmbed: false,
+							},
+							{
+								text: "social",
+								href: "https://www.instagram.com/kelramel_/",
+								hasEmbed: false,
+							},
+						].map((item, index) => (
+							<li key={index} className="relative group">
+								<Link
+									className="hover:text-[#b39d90] uppercase"
+									href={item.href}
+								>
+									{item.text}
+								</Link>
+
+								<div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute -right-40 transform rotate-90 w-[400px] h-[420px] rounded-sm -z-10 transition-all duration-300 ease-in-out">
+									<div className="absolute -left-[70px] top-[180px] w-20 h-10" />
+									{item.text === "collection" ? (
+										<div className="bg-[#faf6f1] p-8 h-full rounded-sm shadow-md overflow-y-auto">
+											<h2 className="text-2xl uppercase">
+												{item.text}
+											</h2>
+											<hr className="my-2 border-gray-600" />
+											<CollectionHover />
+										</div>
+									) : (
+										<InstagramEmbed
+											url="https://www.instagram.com/kelramel_/"
+											width={328}
+										/>
+									)}
+								</div>
+							</li>
+						))}
+					</ul>
 					<div className="flex flex-col sm:flex-row gap-4 justify-around max-w-4xl mx-auto">
 						<div className="p-4 sm:p-0 flex justify-center order-first sm:order-last">
 							<div className="p-10 bg-[#faf6f1] rounded-md">
