@@ -126,6 +126,44 @@ const Page = () => {
 						</li>
 					))}
 				</ul>
+
+				<div className="container mx-auto my-12">
+					<div className="flex flex-col sm:flex-row gap-4 justify-around max-w-4xl mx-auto">
+						<div className="p-4 sm:p-0 flex justify-center order-first sm:order-last">
+							<div className="p-10 bg-[#faf6f1] rounded-md">
+								<Image
+									src="https://images.saatchiart.com/saatchi/401164/art/3953923/3023779-HSC00001-7.jpg"
+									alt="Authors photo"
+									width={250}
+									height={300}
+									className="rounded-md h-full"
+								/>
+							</div>
+						</div>
+
+						<div className="p-4 sm:p-0 flex flex-col justify-center order-last sm:order-first">
+							<h2 className="text-sm font-light uppercase">
+								featured
+							</h2>
+							<h1 className="text-4xl my-2">Unspoiled</h1>
+							<p className="max-w-sm my-8 tracking-wider">
+								The cotton drifted, unfolding the pristine blue
+								that played a melodic acoustic soundtrack by my
+								ear. The maple leaves rustling beneath my
+								striped pyjamas pants joined the serene
+								tweeting, occupying the main performing slot.
+							</p>
+
+							<Link
+								href="/posts/unspoiled"
+								className="w-fit px-6 py-1 tracking-wider border border-gray-400 rounded-sm hover:bg-[#b39d90] hover:text-white hover:border-[#b39d90] transition-colors"
+							>
+								Read the post
+							</Link>
+						</div>
+					</div>
+				</div>
+
 				<div className="container mx-auto px-4 pt-5" id="slogan">
 					<div className="hidden md:block">
 						<Typewriter
