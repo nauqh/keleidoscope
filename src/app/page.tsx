@@ -129,7 +129,7 @@ const Page = () => {
 					</ul>
 					<div className="flex flex-col sm:flex-row gap-4 justify-around max-w-4xl mx-auto">
 						<div className="p-4 sm:p-0 flex justify-center order-first sm:order-last">
-							<div className="p-10 bg-[#faf6f1] rounded-md">
+							<div className="p-10 bg-[#faf6f1] rounded-md relative">
 								<Image
 									src="https://images.saatchiart.com/saatchi/401164/art/3953923/3023779-HSC00001-7.jpg"
 									alt="Authors photo"
@@ -142,7 +142,7 @@ const Page = () => {
 									alt="Authors photo"
 									width={90}
 									height={90}
-									className="absolute sm:left-[52%] left-[40%] top-[63%]"
+									className="absolute sm:-left-16 sm:-bottom-8 left-1/2 bottom-4 sm:transform-none transform -translate-x-1/2 translate-y-20"
 								/>
 							</div>
 						</div>
