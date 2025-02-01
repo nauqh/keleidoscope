@@ -170,7 +170,10 @@ const Page = () => {
 					</div>
 				</div>
 
-				<div className="container mx-auto px-4 pt-5" id="slogan">
+				<div
+					className="container mx-auto px-4 pt-5 md:mt-24"
+					id="slogan"
+				>
 					<div className="hidden md:block">
 						<Typewriter
 							text="dumping thoughts on dumb ears"
