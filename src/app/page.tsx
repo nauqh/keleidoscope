@@ -155,7 +155,7 @@ const Page = () => {
 							</p>
 
 							<Link
-								href="/posts/unspoiled"
+								href="/posts/unspoiled?tags=short story,nature&img=https://openaccess-cdn.clevelandart.org/1971.47/1971.47_print.jpg"
 								className="w-fit px-6 py-1 tracking-wider border border-gray-400 rounded-sm hover:bg-[#b39d90] hover:text-white hover:border-[#b39d90] transition-colors"
 							>
 								Read the post
