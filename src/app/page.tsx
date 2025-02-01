@@ -84,7 +84,7 @@ const Page = () => {
 			<Fade cascade={true} triggerOnce={true}>
 				<div className="container mx-auto my-12">
 					<ul
-						className="hidden lg:flex absolute left-12 top-1/2 flex-row gap-8 z-10 text-sm"
+						className="hidden lg:flex absolute left-12 top-[40%] flex-row gap-8 z-10 text-sm"
 						style={{ transform: "rotate(-90deg)" }}
 					>
 						{[
