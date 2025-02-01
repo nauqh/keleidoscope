@@ -34,8 +34,7 @@ const Nav = () => {
 			window.location.href = result.url;
 		} else {
 			toast({
-				description:
-					"Oops! Your search is as empty as my coffee cup on Monday morning. Try again?",
+				description: "Blank space? I’m no Taylor Swift—fill it up!",
 				className: "bg-yellow-100 text-yellow-800 border-yellow-600",
 				duration: 3000,
 			});
