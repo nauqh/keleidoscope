@@ -109,7 +109,7 @@ const Page = () => {
 							<div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute -right-40 transform rotate-90 w-[400px] h-[420px] rounded-sm -z-10 transition-all duration-300 ease-in-out">
 								<div className="absolute -left-[70px] top-[180px] w-20 h-10" />
 								{item.text === "collection" ? (
-									<div className="bg-[#faf6f1] p-8 h-full rounded-sm shadow-md">
+									<div className="bg-[#faf6f1] p-8 h-full rounded-sm shadow-md overflow-y-auto">
 										<h2 className="text-2xl uppercase">
 											{item.text}
 										</h2>
