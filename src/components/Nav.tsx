@@ -128,7 +128,19 @@ const Nav = () => {
 								/>
 								<button
 									className="absolute right-0 top-0 h-full px-6 rounded-r-lg bg-transparent hover:bg-[#a08977] text-[#a08977] hover:text-white transition-all"
-									onClick={handleSearch}
+									onClick={() => {
+										if (!searchQuery.trim()) {
+											toast({
+												description:
+													"Oops! Your search is as empty as my coffee cup on Monday morning. Try again?",
+												className:
+													"bg-yellow-100 text-yellow-800 border-yellow-600",
+												duration: 3000,
+											});
+										} else {
+											handleSearch();
+										}
+									}}
 								>
 									Search
 								</button>
