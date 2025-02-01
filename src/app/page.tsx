@@ -140,9 +140,9 @@ const Page = () => {
 								<Image
 									src="/home_logo.svg"
 									alt="Authors photo"
-									width={100}
-									height={100}
-									className="absolute sm:left-1/2 left-[40%] top-[63%] sm:w-[100px] sm:h-[100px] w-[80px] h-[80px]"
+									width={90}
+									height={90}
+									className="absolute sm:left-[52%] left-[40%] top-[63%]"
 								/>
 							</div>
 						</div>
