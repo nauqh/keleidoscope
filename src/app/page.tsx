@@ -179,7 +179,8 @@ const Page = () => {
 										toast({
 											description:
 												"Hey! Be sneaky, not empty!",
-											variant: "destructive",
+											className:
+												"bg-yellow-100 text-yellow-800 border-yellow-600",
 											duration: 3000,
 										});
 										return;

@@ -36,7 +36,7 @@ const Nav = () => {
 			toast({
 				description:
 					"Oops! Your search is as empty as my coffee cup on Monday morning. Try again?",
-				variant: "destructive",
+				className: "bg-yellow-100 text-yellow-800 border-yellow-600",
 				duration: 3000,
 			});
 			setSearchQuery("");
