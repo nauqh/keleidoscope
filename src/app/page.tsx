@@ -137,6 +137,13 @@ const Page = () => {
 									height={300}
 									className="rounded-md h-full"
 								/>
+								<Image
+									src="/home_logo.svg"
+									alt="Authors photo"
+									width={100}
+									height={100}
+									className="absolute sm:left-1/2 left-[40%] top-[63%] sm:w-[100px] sm:h-[100px] w-[80px] h-[80px]"
+								/>
 							</div>
 						</div>
 
