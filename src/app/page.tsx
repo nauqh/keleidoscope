@@ -67,7 +67,15 @@ const Page = () => {
 	}, []);
 
 	const handleSend = () => {
-		console.log("Message:", message);
+		fetch("https://keleidoserve.up.railway.app/feedback", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({
+				message: message,
+			}),
+		});
 		setMessage("");
 	};
 
