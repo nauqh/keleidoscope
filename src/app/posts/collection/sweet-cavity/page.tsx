@@ -40,7 +40,7 @@ const paragraphs = [
 	"It’s like wearing ur best gown to the met gala",
 	"& getting locked in the toilet",
 	"Finally, I would like to dedicate the opening and closing of this collection to you, my readers. To properly greet you, to spare nothing of my heart. This work is crafted to not withhold anything but ruin your day, so that once it’s over, you’ll taste Joy bursting on your tongue. Yet, I must confess this is a win-win relationship between us and I am not solely acting out of charity. Autumn Royal’s words in her poem [Regarding] The Pain Of Others has deeply inspired and perfectly encapsulated my motive: “to embracing other people’s anguishes for the sake of my own creative endeavours.”",
-	"I’d leave these words as my final mark: this work doesn’t exist for civility. It only exists tosatisfy the unspoken desire to destroy, to perhaps become armour that defends one’s innerchild from bloodless ties.",
+	"I’d leave these words as my final mark: this work doesn’t exist for civility. It only exists to satisfy the unspoken desire to destroy, to perhaps become armour that defends one’s innerchild from bloodless ties.",
 ];
 
 const posts = [
