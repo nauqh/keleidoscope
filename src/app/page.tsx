@@ -217,7 +217,7 @@ const Page = () => {
 											description:
 												"Hey! Be sneaky, not empty!",
 											className:
-												"bg-yellow-100 text-yellow-800 border-yellow-600",
+												"bg-yellow-100 text-yellow-800",
 											duration: 3000,
 										});
 										return;

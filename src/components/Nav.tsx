@@ -35,7 +35,7 @@ const Nav = () => {
 		} else {
 			toast({
 				description: "Blank space? I’m no Taylor Swift—fill it up!",
-				className: "bg-yellow-100 text-yellow-800 border-yellow-600",
+				className: "bg-yellow-100 text-yellow-800",
 				duration: 3000,
 			});
 			setSearchQuery("");
@@ -133,7 +133,7 @@ const Nav = () => {
 												description:
 													"Blank space? I’m no Taylor Swift—fill it up!",
 												className:
-													"bg-yellow-100 text-yellow-800 border-yellow-600",
+													"bg-yellow-100 text-yellow-800",
 												duration: 3000,
 											});
 										} else {
