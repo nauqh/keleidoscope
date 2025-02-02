@@ -142,12 +142,12 @@ const Page = () => {
 									alt="Authors photo"
 									width={90}
 									height={90}
-									className="absolute sm:-left-16 sm:-bottom-8 left-1/2 bottom-4 sm:transform-none transform -translate-x-1/2 translate-y-20"
+									className="absolute sm:-left-16 sm:-bottom-8 left-1/2 bottom-4 sm:transform-none transform -translate-x-1/2 translate-y-20 w-[80px] sm:w-[90px] h-[80px] sm:h-[90px]"
 								/>
 							</div>
 						</div>
 
-						<div className="p-4 sm:p-0 flex flex-col justify-center order-last sm:order-first">
+						<div className="mt-12 sm:my-0 p-4 sm:p-0 flex flex-col justify-center order-last sm:order-first">
 							<h2 className="text-sm font-light uppercase">
 								featured
 							</h2>
