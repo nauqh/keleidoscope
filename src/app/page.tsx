@@ -14,6 +14,14 @@ import { useToast } from "@/hooks/use-toast";
 import { Fade } from "react-awesome-reveal";
 import dynamic from "next/dynamic";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Keleidoscope - Personal Writing Collection",
+	description:
+		"Discover a unique collection of fiction, poetry, and short stories at Keleidoscope",
+};
+
 const CollectionHover = () => {
 	return (
 		<div className="flex flex-col gap-4">
@@ -80,176 +88,201 @@ const Page = () => {
 	};
 
 	return (
-		<div>
-			<Fade cascade={true} triggerOnce={true}>
-				<div className="container mx-auto my-12">
-					<ul
-						className="hidden lg:flex absolute left-12 top-[40%] flex-row gap-8 z-10 text-sm"
-						style={{ transform: "rotate(-90deg)" }}
-					>
-						{[
-							{
-								text: "collection",
-								href: "mailto:hodominhquan.self@gmail.com",
-								hasEmbed: false,
-							},
-							{
-								text: "social",
-								href: "https://www.instagram.com/kelramel_/",
-								hasEmbed: false,
-							},
-						].map((item, index) => (
-							<li key={index} className="relative group">
-								<Link
-									className="hover:text-[#b39d90] uppercase"
-									href={item.href}
-								>
-									{item.text}
-								</Link>
+		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: JSON.stringify({
+						"@context": "https://schema.org",
+						"@type": "WebSite",
+						name: "Keleidoscope",
+						url: "https://keleidoscope.vercel.app",
+						description:
+							"A unique collection of fiction, poetry, and short stories",
+						author: {
+							"@type": "Person",
+							name: "Your Name",
+						},
+						keywords:
+							"keleidoscope, writing, fiction, poetry, short stories",
+					}),
+				}}
+			/>
+			<div>
+				<Fade cascade={true} triggerOnce={true}>
+					<div className="container mx-auto my-12">
+						<ul
+							className="hidden lg:flex absolute left-12 top-[40%] flex-row gap-8 z-10 text-sm"
+							style={{ transform: "rotate(-90deg)" }}
+						>
+							{[
+								{
+									text: "collection",
+									href: "mailto:hodominhquan.self@gmail.com",
+									hasEmbed: false,
+								},
+								{
+									text: "social",
+									href: "https://www.instagram.com/kelramel_/",
+									hasEmbed: false,
+								},
+							].map((item, index) => (
+								<li key={index} className="relative group">
+									<Link
+										className="hover:text-[#b39d90] uppercase"
+										href={item.href}
+									>
+										{item.text}
+									</Link>
 
-								<div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute -right-40 transform rotate-90 w-[400px] h-[420px] rounded-sm -z-10 transition-all duration-300 ease-in-out">
-									<div className="absolute -left-[70px] top-[180px] w-20 h-10" />
-									{item.text === "collection" ? (
-										<div className="bg-[#faf6f1] p-8 h-full rounded-sm shadow-md overflow-y-auto">
-											<h2 className="text-2xl uppercase">
-												{item.text}
-											</h2>
-											<hr className="my-2 border-gray-600" />
-											<CollectionHover />
-										</div>
-									) : (
-										<InstagramEmbed
-											url="https://www.instagram.com/kelramel_/"
-											width={328}
-										/>
-									)}
+									<div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute -right-40 transform rotate-90 w-[400px] h-[420px] rounded-sm -z-10 transition-all duration-300 ease-in-out">
+										<div className="absolute -left-[70px] top-[180px] w-20 h-10" />
+										{item.text === "collection" ? (
+											<div className="bg-[#faf6f1] p-8 h-full rounded-sm shadow-md overflow-y-auto">
+												<h2 className="text-2xl uppercase">
+													{item.text}
+												</h2>
+												<hr className="my-2 border-gray-600" />
+												<CollectionHover />
+											</div>
+										) : (
+											<InstagramEmbed
+												url="https://www.instagram.com/kelramel_/"
+												width={328}
+											/>
+										)}
+									</div>
+								</li>
+							))}
+						</ul>
+						<div className="flex flex-col sm:flex-row gap-4 justify-around max-w-4xl mx-auto">
+							<div className="p-4 sm:p-0 flex justify-center order-first sm:order-last">
+								<div className="p-10 bg-[#faf6f1] rounded-md relative">
+									<Image
+										src="https://images.saatchiart.com/saatchi/401164/art/3953923/3023779-HSC00001-7.jpg"
+										alt="Authors photo"
+										width={250}
+										height={300}
+										className="rounded-md h-full"
+									/>
+									<Image
+										src="/home_logo.svg"
+										alt="Authors photo"
+										width={90}
+										height={90}
+										className="absolute sm:-left-16 sm:-bottom-8 left-1/2 bottom-4 sm:transform-none transform -translate-x-1/2 translate-y-20 w-[80px] sm:w-[90px] h-[80px] sm:h-[90px]"
+									/>
 								</div>
-							</li>
-						))}
-					</ul>
-					<div className="flex flex-col sm:flex-row gap-4 justify-around max-w-4xl mx-auto">
-						<div className="p-4 sm:p-0 flex justify-center order-first sm:order-last">
-							<div className="p-10 bg-[#faf6f1] rounded-md relative">
-								<Image
-									src="https://images.saatchiart.com/saatchi/401164/art/3953923/3023779-HSC00001-7.jpg"
-									alt="Authors photo"
-									width={250}
-									height={300}
-									className="rounded-md h-full"
-								/>
-								<Image
-									src="/home_logo.svg"
-									alt="Authors photo"
-									width={90}
-									height={90}
-									className="absolute sm:-left-16 sm:-bottom-8 left-1/2 bottom-4 sm:transform-none transform -translate-x-1/2 translate-y-20 w-[80px] sm:w-[90px] h-[80px] sm:h-[90px]"
-								/>
+							</div>
+
+							<div className="mt-12 sm:my-0 p-4 sm:p-0 flex flex-col justify-center order-last sm:order-first">
+								<h2 className="text-sm font-light uppercase">
+									featured
+								</h2>
+								<h1 className="text-4xl my-2">Unspoiled</h1>
+								<p className="max-w-sm my-8 tracking-wider">
+									The cotton drifted, unfolding the pristine
+									blue that played a melodic acoustic
+									soundtrack by my ear. The maple leaves
+									rustling beneath my striped pyjamas pants
+									joined the serene tweeting, occupying the
+									main performing slot.
+								</p>
+
+								<Link
+									href="/posts/unspoiled?tags=short story,nature&img=https://openaccess-cdn.clevelandart.org/1971.47/1971.47_print.jpg"
+									className="w-fit px-6 py-1 tracking-wider border border-gray-400 rounded-sm hover:bg-[#b39d90] hover:text-white hover:border-[#b39d90] transition-colors"
+								>
+									Read the post
+								</Link>
 							</div>
 						</div>
+					</div>
 
-						<div className="mt-12 sm:my-0 p-4 sm:p-0 flex flex-col justify-center order-last sm:order-first">
-							<h2 className="text-sm font-light uppercase">
-								featured
-							</h2>
-							<h1 className="text-4xl my-2">Unspoiled</h1>
-							<p className="max-w-sm my-8 tracking-wider">
-								The cotton drifted, unfolding the pristine blue
-								that played a melodic acoustic soundtrack by my
-								ear. The maple leaves rustling beneath my
-								striped pyjamas pants joined the serene
-								tweeting, occupying the main performing slot.
-							</p>
-
-							<Link
-								href="/posts/unspoiled?tags=short story,nature&img=https://openaccess-cdn.clevelandart.org/1971.47/1971.47_print.jpg"
-								className="w-fit px-6 py-1 tracking-wider border border-gray-400 rounded-sm hover:bg-[#b39d90] hover:text-white hover:border-[#b39d90] transition-colors"
-							>
-								Read the post
-							</Link>
+					<div
+						className="container mx-auto px-4 pt-5 md:mt-24"
+						id="slogan"
+					>
+						<div className="hidden md:block">
+							<Typewriter
+								text="dumping thoughts on dumb ears"
+								delay={100}
+							/>
+						</div>
+						<div className="md:hidden">
+							<Typewriter
+								text="a voice in the void"
+								delay={100}
+							/>
 						</div>
 					</div>
-				</div>
 
-				<div
-					className="container mx-auto px-4 pt-5 md:mt-24"
-					id="slogan"
-				>
-					<div className="hidden md:block">
-						<Typewriter
-							text="dumping thoughts on dumb ears"
-							delay={100}
-						/>
+					<div className="container mx-auto px-4 py-5" id="posts">
+						<div className="columns-1 md:columns-2 gap-6 space-y-6">
+							<Fade cascade={true} triggerOnce={true}>
+								{postsData.posts.map((post, index) =>
+									post.posted_at ? (
+										<Post
+											key={index}
+											title={post.title}
+											img={post.img}
+											posted_at={post.posted_at}
+											description={post.description}
+											tags={post.tags}
+										/>
+									) : null
+								)}
+							</Fade>
+						</div>
 					</div>
-					<div className="md:hidden">
-						<Typewriter text="a voice in the void" delay={100} />
-					</div>
-				</div>
 
-				<div className="container mx-auto px-4 py-5" id="posts">
-					<div className="columns-1 md:columns-2 gap-6 space-y-6">
-						<Fade cascade={true} triggerOnce={true}>
-							{postsData.posts.map((post, index) =>
-								post.posted_at ? (
-									<Post
-										key={index}
-										title={post.title}
-										img={post.img}
-										posted_at={post.posted_at}
-										description={post.description}
-										tags={post.tags}
-									/>
-								) : null
-							)}
-						</Fade>
-					</div>
-				</div>
-
-				<div className="my-4 px-4 py-20 bg-[#faf6f1] rounded-sm">
-					<div className="max-w-md mx-auto text-center">
-						<h2 className="text-xl mb-4 uppercase">
-							Send me your thoughts
-						</h2>
-						<p className="mb-6 text-gray-600">
-							Roast me (or hype me up) - anonymously
-						</p>
-						<div className="flex flex-col gap-3">
-							<textarea
-								value={message}
-								onChange={(e) => setMessage(e.target.value)}
-								placeholder="Your message"
-								rows={4}
-								className="px-3 py-2 border border-gray-300 rounded-sm focus:outline-none focus:border-[#b39d90] resize-none"
-							></textarea>
-							<button
-								onClick={() => {
-									if (!message.trim()) {
+					<div className="my-4 px-4 py-20 bg-[#faf6f1] rounded-sm">
+						<div className="max-w-md mx-auto text-center">
+							<h2 className="text-xl mb-4 uppercase">
+								Send me your thoughts
+							</h2>
+							<p className="mb-6 text-gray-600">
+								Roast me (or hype me up) - anonymously
+							</p>
+							<div className="flex flex-col gap-3">
+								<textarea
+									value={message}
+									onChange={(e) => setMessage(e.target.value)}
+									placeholder="Your message"
+									rows={4}
+									className="px-3 py-2 border border-gray-300 rounded-sm focus:outline-none focus:border-[#b39d90] resize-none"
+								></textarea>
+								<button
+									onClick={() => {
+										if (!message.trim()) {
+											toast({
+												description:
+													"Hey! Be sneaky, not empty!",
+												className:
+													"bg-yellow-100 text-yellow-800",
+												duration: 3000,
+											});
+											return;
+										}
+										handleSend();
 										toast({
 											description:
-												"Hey! Be sneaky, not empty!",
-											className:
-												"bg-yellow-100 text-yellow-800",
+												"Your message has been sent.",
 											duration: 3000,
 										});
-										return;
-									}
-									handleSend();
-									toast({
-										description:
-											"Your message has been sent.",
-										duration: 3000,
-									});
-								}}
-								className="px-6 py-2 bg-[#b39d90] text-white rounded-sm hover:bg-[#a08977] transition-colors"
-							>
-								Send
-							</button>
+									}}
+									className="px-6 py-2 bg-[#b39d90] text-white rounded-sm hover:bg-[#a08977] transition-colors"
+								>
+									Send
+								</button>
+							</div>
 						</div>
 					</div>
-				</div>
-			</Fade>
-			<Toaster />
-			<Footer />
-		</div>
+				</Fade>
+				<Toaster />
+				<Footer />
+			</div>
+		</>
 	);
 };
 

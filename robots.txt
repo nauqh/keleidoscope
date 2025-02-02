@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /private/
+Disallow: /admin/
+
+# Sitemap
+Sitemap: https://keleidoscope.vercel.app/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Additional search engine specific rules
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: DuckDuckBot
+Allow: /
