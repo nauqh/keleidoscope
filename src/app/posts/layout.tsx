@@ -10,7 +10,7 @@ const PostHeader = () => {
 	const searchParams = useSearchParams();
 
 	return (
-		<div className="container mx-auto px-4 py-5">
+		<div className="container mx-auto px-4 py-5 max-w-5xl">
 			<h2 className="text-sm font-semibold text-[hsl(var(--secondary-color))]">
 				{searchParams.get("tags")?.toUpperCase().split(",").join("-")}
 			</h2>
@@ -55,10 +55,7 @@ export default function PostLayout({
 				<Suspense fallback={<div>Loading...</div>}>
 					<PostHeader />
 				</Suspense>
-				<div
-					className="container mx-auto px-4 py-5"
-					style={{ marginBottom: "5rem" }}
-				>
+				<div className="container mx-auto px-4 py-5 max-w-4xl prose prose-lg">
 					{children}
 				</div>
 			</Fade>
@@ -73,7 +70,7 @@ export default function PostLayout({
 					<FaArrowUp size={20} />
 				</button>
 			)}
-			<footer className="container mx-auto px-4 py-5 text-center text-sm text-gray-500">
+			<footer className="container mx-auto px-4 py-5 max-w-4xl text-center text-sm text-gray-500">
 				<p>
 					{new Date().toLocaleDateString("en-US", {
 						weekday: "long",

@@ -82,9 +82,9 @@ const Page = () => {
 	return (
 		<div>
 			<Fade cascade={true} triggerOnce={true}>
-				<div className="container mx-auto my-12">
+				<div className="container mx-auto my-12 max-w-5xl px-4">
 					<ul
-						className="hidden lg:flex absolute left-12 top-[40%] flex-row gap-8 z-10 text-sm"
+						className="hidden lg:flex absolute left-12 top-[40%] flex-row gap-8 z-10 text-sm mt-10"
 						style={{ transform: "rotate(-90deg)" }}
 					>
 						{[
@@ -127,7 +127,7 @@ const Page = () => {
 							</li>
 						))}
 					</ul>
-					<div className="flex flex-col sm:flex-row gap-4 justify-around max-w-4xl mx-auto">
+					<div className="flex flex-col sm:flex-row gap-4 justify-around max-w-3xl mx-auto">
 						<div className="p-4 sm:p-0 flex justify-center order-first sm:order-last">
 							<div className="p-10 bg-[#faf6f1] rounded-md relative">
 								<Image
@@ -171,7 +171,7 @@ const Page = () => {
 				</div>
 
 				<div
-					className="container mx-auto px-4 pt-5 md:mt-24"
+					className="container mx-auto px-4 pt-5 md:mt-24 max-w-5xl"
 					id="slogan"
 				>
 					<div className="hidden md:block">
@@ -185,8 +185,11 @@ const Page = () => {
 					</div>
 				</div>
 
-				<div className="container mx-auto px-4 py-5" id="posts">
-					<div className="columns-1 md:columns-2 gap-6 space-y-6">
+				<div
+					className="container mx-auto px-4 py-5 max-w-5xl"
+					id="posts"
+				>
+					<div className="columns-1 md:columns-2 gap-4 space-y-4">
 						<Fade cascade={true} triggerOnce={true}>
 							{postsData.posts.map((post, index) =>
 								post.posted_at ? (
@@ -205,7 +208,7 @@ const Page = () => {
 				</div>
 
 				<div className="my-4 px-4 py-20 bg-[#faf6f1] rounded-sm">
-					<div className="max-w-md mx-auto text-center">
+					<div className="max-w-sm mx-auto text-center">
 						<h2 className="text-xl mb-4 uppercase">
 							Send me your thoughts
 						</h2>
