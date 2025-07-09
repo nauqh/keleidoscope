@@ -12,7 +12,7 @@ const paragraphs = [
 	"Rain Check is a contemporary theatre piece that gives form to the quiet things we often leave unsaid. Every character, in their own way, embodies the concept of taking a rain check.",
 	"The play explores that idea through blurred relational boundaries, intergenerational trauma and the murky grey areas of emotional life. It does so with empathy, but not with easy answers.",
 	"I was deeply conflicted about even writing this, because I know it brushes up against topics that are morally and emotionally difficult. And yes, I'm aware it simplifies things that are layered and deeply personal. Things that often go unnoticed, but are far more common than we'd like to admit. Still, I chose not to shy away from that discomfort. Because I believe discomfort doesn't mean something shouldn't be said. I want to set stepping stones for talking about controversial topics. Not to sensationalise, but to open space.",
-	"There's a quote from The Princess Diaries that kept me going as I wrote this: 'Courage is not the absence of fear, but rather the judgment that something else is more important than fear.'",
+	"There's a quote from The Princess Diaries that kept me going as I wrote this: 'Courage is not the absence of fear, but rather the judgement that something else is more important than fear.'",
 	"That is Rain Check for me.",
 ];
 
