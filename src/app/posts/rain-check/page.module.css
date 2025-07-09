@@ -1,0 +1,3 @@
+.baseText {
+	@apply text-xl leading-relaxed my-4;
+}
