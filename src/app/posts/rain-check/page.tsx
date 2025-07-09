@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 import PdfViewer from "@/components/PdfViewer";
 
 const Paragraph = ({ text }: { text: string }) => (
-	<p className={styles.baseTextCenter}>{text}</p>
+	<p className={styles.indentedText}>{text}</p>
 );
 
 const paragraphs = [

@@ -1,3 +1,4 @@
-.baseText {
+.indentedText {
 	@apply text-xl leading-relaxed my-4;
+	text-indent: 4rem;
 }
