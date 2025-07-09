@@ -35,6 +35,18 @@
             "url": "/posts/collection/sweet-cavity?tags=poetry,collection&img=https://static01.nyt.com/images/2022/03/01/arts/28flora1/28flora1-videoSixteenByNineJumbo1600.jpg"
         },
         {
+            "title": "RAIN CHECK",
+            "img": "https://www.tresbohemes.com/wp-content/uploads/2015/06/New-York-Rains-Jeremy-Mann-Tres-Bohemes.jpg",
+            "posted_at": "2025-07-09T15:30:00Z",
+            "description": "A play about a family's journey through the rain, and the love that binds them together.",
+            "tags": [
+                "play",
+                "family",
+                "contemporary theatre"
+            ],
+            "url": "/posts/collection/rain-check?tags=fiction,short%20story,collection&img=https://www.tresbohemes.com/wp-content/uploads/2015/06/New-York-Rains-Jeremy-Mann-Tres-Bohemes.jpg"
+        },
+        {
             "title": "NAOMI",
             "img": "https://i.pinimg.com/736x/4a/be/59/4abe5946d2209fd260363b751ad4e93c.jpg",
             "posted_at": "2023-12-14T15:30:00Z",
