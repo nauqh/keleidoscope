@@ -6,7 +6,7 @@ import PdfViewer from "@/components/PdfViewer";
 const Page = () => {
 	// Example Google Drive URL - replace with your actual PDF link
 	const pdfUrl =
-		"https://drive.google.com/file/d/1QSXuzHy8Gi4NXoovIrXkMrzQo7J357Of/view?usp=sharing";
+		"https://drive.google.com/file/d/1caM6PPbFnA4Vp966DzU4TisysGI3jPJu/view?usp=sharing";
 
 	return (
 		<>
@@ -16,7 +16,7 @@ const Page = () => {
 			<p className="text-xs text-gray-500 mt-2 text-center">
 				Image from{" "}
 				<a
-					href="https://www.tresbohemes.com/wp-content/uploads/2015/06/New-York-Rains-Jeremy-Mann-Tres-Bohemes.jpg"
+					href="https://i.ebayimg.com/images/g/VzkAAOSwGjRkOZkD/s-l1600.webp"
 					className="hover:text-[hsl(var(--secondary-color))]"
 				>
 					Beyond the Void

@@ -58,6 +58,17 @@
             "url": "/posts/naomi?tags=fiction%2Cshort+story&img=https%3A%2F%2Fi.pinimg.com%2F736x%2F4a%2Fbe%2F59%2F4abe5946d2209fd260363b751ad4e93c.jpg"
         },
         {
+            "title": "FATHER ISSUES",
+            "img": "https://i.ebayimg.com/images/g/VzkAAOSwGjRkOZkD/s-l1600.webp",
+            "posted_at": "2025-07-09T15:30:00Z",
+            "description": "A play about a father's journey through the rain, and the love that binds them together.",
+            "tags": [
+                "screenplay",
+                "family"
+            ],
+            "url": "/posts/father-issue?tags=screenplay,family&img=https://i.ebayimg.com/images/g/VzkAAOSwGjRkOZkD/s-l1600.webp"
+        },
+        {
             "title": "ABOUT",
             "img": "",
             "tags": [
