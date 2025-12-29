@@ -18,7 +18,7 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.471.1",
     "mailgo": "^0.12.2",
-    "next": "15.1.4",
+    "next": "15.1.11",
     "react": "^19.0.0",
     "react-awesome-reveal": "^4.3.1",
     "react-dom": "^19.0.0",
