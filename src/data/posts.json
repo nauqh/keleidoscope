@@ -36,7 +36,7 @@
         },
         {
             "title": "RAIN CHECK",
-            "img": "https://www.tresbohemes.com/wp-content/uploads/2015/06/New-York-Rains-Jeremy-Mann-Tres-Bohemes.jpg",
+            "img": "https://wallpapercave.com/wp/wp8987819.jpg",
             "posted_at": "2025-07-09T15:30:00Z",
             "description": "A contemporary theatre play that explores blurred relational boundaries, intergenerational trauma and the murky grey areas of emotional life. It does so with empathy, but not with easy answers.",
             "tags": [
@@ -47,15 +47,15 @@
             "url": "/posts/rain-check?tags=fiction,short%20story,collection&img=https://www.tresbohemes.com/wp-content/uploads/2015/06/New-York-Rains-Jeremy-Mann-Tres-Bohemes.jpg"
         },
         {
-            "title": "NAOMI",
-            "img": "https://i.pinimg.com/736x/4a/be/59/4abe5946d2209fd260363b751ad4e93c.jpg",
-            "posted_at": "2023-12-14T15:30:00Z",
-            "description": "Some of my classmates were startled when they saw me on stage, but they applauded. I've never really stepped foot on a stage since. My dad said no. He switched from Ted Talks to Trump.",
+            "title": "Housekeeping",
+            "img": "/Housekeeping.jpg",
+            "posted_at": "2026-01-18T15:30:00Z",
+            "description": "A poem about emotional labor and mismatched care in a relationship, where one partner's surface-level efforts at cleaning and fixing never reach the deeper, unspoken places where the other person truly needs to be seen.",
             "tags": [
                 "fiction",
-                "short story"
+                "poem"
             ],
-            "url": "/posts/naomi?tags=fiction%2Cshort+story&img=https%3A%2F%2Fi.pinimg.com%2F736x%2F4a%2Fbe%2F59%2F4abe5946d2209fd260363b751ad4e93c.jpg"
+            "url": "/posts/housekeeping?tags=fiction,poem&img=/Housekeeping.jpg"
         },
         {
             "title": "FATHER ISSUES",
