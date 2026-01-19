@@ -2,7 +2,6 @@
 import React, { Suspense } from "react";
 import ImageHeader from "@/components/ImageHeader";
 import PdfViewer from "@/components/PdfViewer";
-import styles from "./page.module.css";
 
 const Page = () => {
 	const pdfUrl =
