@@ -28,6 +28,30 @@ export const metadata: Metadata = {
 	alternates: {
 		canonical: "https://keleidoscope.vercel.app",
 	},
+	openGraph: {
+		type: "website",
+		locale: "en_US",
+		url: "https://keleidoscope.vercel.app",
+		siteName: "Keleidoscope",
+		title: "Keleidoscope - Personal Writing Collection",
+		description:
+			"A unique collection of fiction, poetry, and short stories by Keleidoscope",
+		images: [
+			{
+				url: "/kel-og.png",
+				width: 1200,
+				height: 630,
+				alt: "Keleidoscope - Personal Writing Collection",
+			},
+		],
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Keleidoscope - Personal Writing Collection",
+		description:
+			"A unique collection of fiction, poetry, and short stories by Keleidoscope",
+		images: ["/kel-og.png"],
+	},
 };
 
 export default function RootLayout({
