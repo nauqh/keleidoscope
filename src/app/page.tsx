@@ -18,37 +18,33 @@ type SortOrder = "newest" | "oldest";
 
 const CollectionHover = () => {
 	return (
-		<div className="flex flex-col gap-4">
-			<div className="flex justify-start">
-				<Link
-					href="/posts/collection/sweet-cavity?tags=poetry,collection&img=https://static01.nyt.com/images/2022/03/01/arts/28flora1/28flora1-videoSixteenByNineJumbo1600.jpg"
-					className="hover:text-[#b39d90]"
-				>
-					<h3 className="text-lg">Sweet Cavity</h3>
-					<Image
-						src="https://static01.nyt.com/images/2022/03/01/arts/28flora1/28flora1-videoSixteenByNineJumbo1600.jpg"
-						alt="Description"
-						width={150}
-						height={150}
-						className="mt-4 w-auto rounded-sm"
-					/>
-				</Link>
-			</div>
-			<div className="flex justify-end">
-				<Link
-					href="/posts/collection/dream-journal?tags=fiction,short%20story,collection&img=https://images8.alphacoders.com/119/1197975.jpg"
-					className="hover:text-[#b39d90]"
-				>
-					<h3 className="text-lg">Dream Journal</h3>
-					<Image
-						src="https://images8.alphacoders.com/119/1197975.jpg"
-						alt="Description"
-						width={150}
-						height={150}
-						className="mt-4 w-auto rounded-sm"
-					/>
-				</Link>
-			</div>
+		<div className="flex flex-col gap-6 h-[calc(420px-120px)]">
+			<Link
+				href="/posts/collection/sweet-cavity?tags=poetry,collection&img=https://static01.nyt.com/images/2022/03/01/arts/28flora1/28flora1-videoSixteenByNineJumbo1600.jpg"
+				className="hover:text-[#b39d90] flex flex-col items-start"
+			>
+				<h3 className="text-lg mb-2">Sweet Cavity</h3>
+				<Image
+					src="https://static01.nyt.com/images/2022/03/01/arts/28flora1/28flora1-videoSixteenByNineJumbo1600.jpg"
+					alt="Description"
+					width={150}
+					height={150}
+					className="w-auto rounded-sm"
+				/>
+			</Link>
+			<Link
+				href="/posts/collection/dream-journal?tags=fiction,short%20story,collection&img=https://images8.alphacoders.com/119/1197975.jpg"
+				className="hover:text-[#b39d90] flex flex-col items-end"
+			>
+				<h3 className="text-lg mb-2">Dream Journal</h3>
+				<Image
+					src="https://images8.alphacoders.com/119/1197975.jpg"
+					alt="Description"
+					width={150}
+					height={150}
+					className="w-auto rounded-sm"
+				/>
+			</Link>
 		</div>
 	);
 };
@@ -122,7 +118,7 @@ const Page = () => {
 								<div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute -right-40 transform rotate-90 w-[400px] h-[420px] rounded-sm -z-10 transition-all duration-300 ease-in-out">
 									<div className="absolute -left-[70px] top-[180px] w-20 h-10" />
 									{item.text === "collection" ? (
-										<div className="bg-[#faf6f1] p-8 h-full rounded-sm shadow-md overflow-y-auto">
+										<div className="bg-[#faf6f1] p-8 h-full rounded-sm shadow-md">
 											<h2 className="text-2xl uppercase">
 												{item.text}
 											</h2>
