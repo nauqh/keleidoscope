@@ -35,10 +35,10 @@ export const metadata: Metadata = {
 		siteName: "Keleidoscope",
 		title: "Keleidoscope - Personal Writing Collection",
 		description:
-			"A unique collection of fiction, poetry, and short stories by Keleidoscope",
+			"This little corner of the internet is where my words and occasional existential crises live and breathe.",
 		images: [
 			{
-				url: "/kel-og.png",
+				url: "/kel.png",
 				width: 1200,
 				height: 630,
 				alt: "Keleidoscope - Personal Writing Collection",
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 		title: "Keleidoscope - Personal Writing Collection",
 		description:
-			"A unique collection of fiction, poetry, and short stories by Keleidoscope",
-		images: ["/kel-og.png"],
+			"This little corner of the internet is where my words and occasional existential crises live and breathe.",
+		images: ["/kel.png"],
 	},
 };
 
