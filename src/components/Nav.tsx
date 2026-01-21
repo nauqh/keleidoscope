@@ -262,7 +262,7 @@ const Nav = () => {
 							<FaInstagram />
 						</Link>
 						<Link
-							href="/linkedin"
+							href="https://www.linkedin.com/in/kel-thai-76119a20a"
 							className="text-2xl hover:text-[hsl(var(--secondary-color))]"
 						>
 							<FaLinkedin />
