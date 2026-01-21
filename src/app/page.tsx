@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import Post from "@/components/Post";
 import Typewriter from "@/components/Typewriter";
 import Link from "next/link";
@@ -13,6 +13,8 @@ import { useToast } from "@/hooks/use-toast";
 
 import { Fade } from "react-awesome-reveal";
 import dynamic from "next/dynamic";
+
+type SortOrder = "newest" | "oldest";
 
 const CollectionHover = () => {
 	return (
@@ -60,11 +62,21 @@ const InstagramEmbed = dynamic(
 
 const Page = () => {
 	const [message, setMessage] = useState("");
+	const [sortOrder, setSortOrder] = useState<SortOrder>("newest");
 	const { toast } = useToast();
 
 	useEffect(() => {
 		mailgo();
 	}, []);
+
+	const sortedPosts = useMemo(() => {
+		const postsWithDates = postsData.posts.filter((post) => post.posted_at);
+		return [...postsWithDates].sort((a, b) => {
+			const dateA = new Date(a.posted_at!).getTime();
+			const dateB = new Date(b.posted_at!).getTime();
+			return sortOrder === "newest" ? dateB - dateA : dateA - dateB;
+		});
+	}, [sortOrder]);
 
 	const handleSend = () => {
 		fetch("https://keleidoserve.up.railway.app/feedback", {
@@ -189,20 +201,45 @@ const Page = () => {
 					className="container mx-auto px-4 py-5 max-w-5xl"
 					id="posts"
 				>
+					<div className="flex justify-end mb-6">
+						<div className="flex items-center gap-3 text-sm text-gray-500">
+							<span className="tracking-wide">Sort by</span>
+							<div className="flex border border-gray-300 rounded-sm overflow-hidden">
+								<button
+									onClick={() => setSortOrder("newest")}
+									className={`px-3 py-1.5 transition-all duration-200 ${
+										sortOrder === "newest"
+											? "bg-[#b39d90] text-white"
+											: "bg-transparent hover:bg-gray-100"
+									}`}
+								>
+									Newest
+								</button>
+								<button
+									onClick={() => setSortOrder("oldest")}
+									className={`px-3 py-1.5 transition-all duration-200 ${
+										sortOrder === "oldest"
+											? "bg-[#b39d90] text-white"
+											: "bg-transparent hover:bg-gray-100"
+									}`}
+								>
+									Oldest
+								</button>
+							</div>
+						</div>
+					</div>
 					<div className="columns-1 md:columns-2 gap-4 space-y-4">
-						<Fade cascade={true} triggerOnce={true}>
-							{postsData.posts.map((post, index) =>
-								post.posted_at ? (
-									<Post
-										key={index}
-										title={post.title}
-										img={post.img}
-										posted_at={post.posted_at}
-										description={post.description}
-										tags={post.tags}
-									/>
-								) : null
-							)}
+						<Fade cascade={true} triggerOnce={true} damping={0.1}>
+							{sortedPosts.map((post, index) => (
+								<Post
+									key={`${post.title}-${index}`}
+									title={post.title}
+									img={post.img}
+									posted_at={post.posted_at!}
+									description={post.description}
+									tags={post.tags}
+								/>
+							))}
 						</Fade>
 					</div>
 				</div>
