@@ -1,0 +1,23 @@
+.poemLine {
+	@apply text-xl leading-relaxed;
+}
+
+.poemLineMobile {
+	@apply text-base leading-relaxed;
+}
+
+.italicLine {
+	@apply text-xl leading-relaxed italic;
+}
+
+.italicLineMobile {
+	@apply text-base leading-relaxed italic;
+}
+
+.stanza {
+	@apply mb-8;
+}
+
+.poemTitle {
+	@apply text-2xl font-bold mb-8;
+}
