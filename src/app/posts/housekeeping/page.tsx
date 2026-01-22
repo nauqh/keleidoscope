@@ -111,10 +111,6 @@ const poem = {
 		{
 			lines: [
 				{ text: "Sometimes, passing a window," },
-			],
-		},
-		{
-			lines: [
 				{ text: "I'd see another room" },
 				{ text: "where light moved softer" },
 				{ text: "along the walls," },
